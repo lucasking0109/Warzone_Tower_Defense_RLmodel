@@ -1,241 +1,241 @@
 # WarZone Tower Defense — Reinforcement Learning Agent
 
-使用強化學習（Reinforcement Learning）訓練一個能自動玩 WarZone Tower Defense Extended 的 Agent。目標是讓 Agent 在 Level 4 "Enclave" 地圖上盡可能存活最多波數。
+Training a Reinforcement Learning agent to play WarZone Tower Defense Extended autonomously. The goal is to survive as many waves as possible on the Level 4 "Enclave" map.
 
 ![Map](enclave_map.png)
 
-## 專案概述
+## Project Overview
 
-本專案包含：
+This project includes:
 
-1. **遊戲模擬器** — 完整重建 WarZone Tower Defense Extended 的遊戲邏輯（Python + Pygame）
-2. **RL 環境** — 基於 Gymnasium 的 RL 環境，支援 Action Masking
-3. **訓練系統** — 使用 MaskablePPO（sb3-contrib）訓練 Agent
-4. **模仿學習** — 支援錄製人類玩家示範，並用 Behavioral Cloning 預訓練
+1. **Game Simulator** — Full recreation of WarZone Tower Defense Extended game logic (Python + Pygame)
+2. **RL Environment** — Gymnasium-based RL environment with Action Masking
+3. **Training Pipeline** — MaskablePPO (sb3-contrib) training system
+4. **Imitation Learning** — Record human demonstrations and pretrain with Behavioral Cloning
 
-### 地圖參數
+### Map Parameters
 
-- 地圖：Level 4 "Enclave"（僅地面單位）
-- 模式：Quick Cash
-- 網格：51×31
-- 敵人出生點：左側 27 個（x=0, y=2~28）
-- 目標點：(45, 5)
-- 障礙物：469 格
-- 可建塔位置：926 格（塔佔 2×2）
-- 可建牆位置：1,084 格
+- Map: Level 4 "Enclave" (ground units only)
+- Mode: Quick Cash
+- Grid: 51×31
+- Enemy spawn points: 27 on the left side (x=0, y=2~28)
+- Goal: (45, 5)
+- Obstacles: 469 tiles
+- Valid tower positions: 926 (towers occupy 2×2 tiles)
+- Valid wall positions: 1,084
 
-### 塔的種類（7 種）
+### Tower Types (7)
 
-| 塔 | 縮寫 | 花費 | 特性 |
-|----|------|------|------|
-| Machine Gun | MG | $200 | 快速射擊，單體 |
-| Cannon | CN | $400 | 範圍傷害 |
-| Freezer | FR | $300 | 減速敵人 |
-| Sniper King | SK | $500 | 長距離高傷害 |
-| Laser | LS | $600 | 光束持續傷害 |
-| Anti-Tank | AT | $1,000 | 對坦克高傷害 |
-| Plasma | PL | $800 | 高 DPS |
+| Tower | Abbr | Cost | Description |
+|-------|------|------|-------------|
+| Machine Gun | MG | $200 | Fast fire rate, single target |
+| Cannon | CN | $400 | Area of effect damage |
+| Freezer | FR | $300 | Slows enemies |
+| Sniper King | SK | $500 | Long range, high damage |
+| Laser | LS | $600 | Continuous beam damage |
+| Anti-Tank | AT | $1,000 | High damage vs armored |
+| Plasma | PL | $800 | High DPS |
 
-## 架構
+## Project Structure
 
 ```
-├── simulator/          # 遊戲引擎
-│   ├── game_engine.py  # 主引擎：tick 循環、建塔/升級/放牆
-│   ├── game_config.py  # 遊戲設定：塔屬性、敵人屬性、波次資料
-│   ├── game_map.py     # 地圖：障礙物、可建造位置
-│   ├── towers.py       # 塔邏輯：攻擊、升級、傷害追蹤
-│   ├── enemies.py      # 敵人邏輯：移動、血量、路徑跟隨
-│   ├── pathfinding.py  # BFS 尋路（支援牆壁改變路徑）
-│   ├── wave_controller.py # 波次生成控制
-│   └── renderer.py     # Pygame 繪圖
+├── simulator/          # Game engine
+│   ├── game_engine.py  # Core engine: tick loop, build/upgrade/wall placement
+│   ├── game_config.py  # Game config: tower stats, enemy stats, wave data
+│   ├── game_map.py     # Map: obstacles, buildable positions
+│   ├── towers.py       # Tower logic: attacking, upgrading, damage tracking
+│   ├── enemies.py      # Enemy logic: movement, HP, path following
+│   ├── pathfinding.py  # BFS pathfinding (supports dynamic wall rerouting)
+│   ├── wave_controller.py # Wave spawning controller
+│   └── renderer.py     # Pygame rendering
 │
-├── rl/                 # 強化學習
-│   ├── td_env.py       # Gymnasium 環境（觀察/動作/獎勵）
-│   ├── train.py        # MaskablePPO 訓練腳本
-│   ├── replay.py       # 視覺化回放工具
-│   ├── pretrain.py     # Behavioral Cloning 預訓練
-│   └── record_demo.py  # 錄製人類玩家示範
+├── rl/                 # Reinforcement learning
+│   ├── td_env.py       # Gymnasium environment (obs/action/reward)
+│   ├── train.py        # MaskablePPO training script
+│   ├── replay.py       # Visual replay tool
+│   ├── pretrain.py     # Behavioral Cloning pretraining
+│   └── record_demo.py  # Record human player demonstrations
 │
-├── runs/               # 訓練紀錄（每個 run 一個資料夾）
-├── main.py             # 互動式 Pygame 遊戲（人類玩家用）
+├── runs/               # Training logs (one folder per run)
+├── main.py             # Interactive Pygame game (for human players)
 └── requirements.txt
 ```
 
-## RL 環境設計
+## RL Environment Design
 
-### 觀察空間（3,438 維）
+### Observation Space (3,438 dimensions)
 
-| 區塊 | 維度 | 內容 |
-|------|------|------|
-| 全域資訊 | 15 | 金錢、生命、波數、塔/牆數量、路徑長度等 |
-| 塔資訊 | 200×17 = 3,400 | 每座塔的位置、類型、等級、傷害、效率等 |
-| 敵人統計 | 8 | 敵人數量、平均血量、最近敵人距離等 |
-| 波次資訊 | 15 | 當前波次的敵人類型與數量 |
+| Component | Dims | Contents |
+|-----------|------|----------|
+| Global info | 15 | Cash, HP, wave number, tower/wall count, path length, etc. |
+| Tower info | 200×17 = 3,400 | Position, type, level, damage dealt, efficiency per tower |
+| Enemy stats | 8 | Enemy count, avg HP, nearest enemy distance, etc. |
+| Wave info | 15 | Current wave enemy types and counts |
 
-### 動作空間（7,767 個離散動作 + Action Masking）
+### Action Space (7,767 discrete actions + Action Masking)
 
-| 動作類型 | 數量 | 說明 |
-|----------|------|------|
-| NOOP | 1 | 不做任何事 |
-| BUILD | 6,482 | 7 種塔 × 926 個位置 |
-| UPGRADE | 200 | 升級已有的塔（最多 200 座） |
-| WALL | 1,084 | 在可用位置放牆 |
+| Action Type | Count | Description |
+|-------------|-------|-------------|
+| NOOP | 1 | Do nothing |
+| BUILD | 6,482 | 7 tower types × 926 positions |
+| UPGRADE | 200 | Upgrade existing towers (up to 200) |
+| WALL | 1,084 | Place wall at available positions |
 
-使用 Action Masking 確保 Agent 只能選擇合法動作（有足夠金錢、位置未被佔用等）。
+Action Masking ensures the agent can only select valid actions (sufficient cash, unoccupied positions, etc.).
 
-### 獎勵設計（最終版本）
+### Reward Design (Final Version)
 
-經過 20 次迭代最終確定的獎勵結構：
+Final reward structure after 20 iterations:
 
-| 獎勵 | 數值 | 說明 |
-|------|------|------|
-| 擊殺普通敵人 | +1.0 | 基本擊殺獎勵 |
-| 擊殺 Boss | +5.0 | Boss 額外獎勵 |
-| 敵人漏出 | -5.0 | 放走普通敵人 |
-| Boss 漏出 | -20.0 | 放走 Boss |
-| 波次完成 | +3.0 + wave × 0.1 | 越後期的波次完成獎勵越高 |
-| 升級塔 | DPS 提升 × 3 | 基於實際 DPS 增量的獎勵 |
-| 放牆（有效） | 路徑增量 × 0.3 | 牆壁確實延長路徑才有獎勵 |
-| 放牆（無效） | -0.3 | 懲罰無意義的牆壁 |
-| 升級壓力 | -0.005 × 可升級數 | Wave 20 後懲罰不升級的行為 |
-| 塔效率懲罰 | -0.01 | 傷害/投資比 < 5 的塔 |
-| 遊戲結束 | -50.0 | 生命歸零 |
+| Reward | Value | Description |
+|--------|-------|-------------|
+| Kill regular enemy | +1.0 | Base kill reward |
+| Kill boss | +5.0 | Boss kill bonus |
+| Enemy leak | -5.0 | Regular enemy reaches goal |
+| Boss leak | -20.0 | Boss reaches goal |
+| Wave complete | +3.0 + wave × 0.1 | Scales with wave number |
+| Upgrade tower | DPS increase × 3 | Based on actual DPS improvement |
+| Wall (effective) | path increase × 0.3 | Only rewarded if wall extends enemy path |
+| Wall (ineffective) | -0.3 | Penalty for useless wall placement |
+| Upgrade pressure | -0.005 × upgradable count | After wave 20, penalizes not upgrading |
+| Tower efficiency penalty | -0.01 | Towers with damage/investment ratio < 5 |
+| Game over | -50.0 | HP reaches zero |
 
-## 訓練歷程
+## Training History
 
-總共訓練了 **20 個 Run**，投入 **267.6 小時**（11.2 天），累計 **2.09 億步**。
+Trained across **20 runs**, totaling **267.6 hours** (11.2 days) and **209 million steps**.
 
-### 訓練結果總覽
+### Results Overview
 
-| Run | 名稱 | 時間 | 步數 | 最佳波數 | 主要改動 |
-|-----|------|------|------|---------|---------|
-| 1 | baseline | 24h | 5M | 101 | 初版：score-based，100 波上限 |
-| 2 | survival | 8h | 5M | 117 | 改為生存目標，移除建塔固定獎勵 |
-| 3 | explore | 22h | 10M | 137 | 網路加大 512×512，entropy ×3 |
-| 4 | walls | 14h | 10M | ~130 | 加入牆壁動作 + 塔類型多樣性獎勵 |
-| 5 | balanced | 8h | 10M | ~125 | 調整獎勵平衡 |
-| 6 | survival | 3h | 4M | ~100 | 實驗性，提前終止 |
-| 7 | unlimit | 11h | 10M | ~130 | 解除塔數量限制（20→200） |
-| 8 | imitation | 11h | 10M | ~120 | 第一次模仿學習 |
-| 9 | imitation2 | 17h | 15M | ~130 | 第二次模仿學習 |
-| 10 | upgrade | 16h | 15M | ~135 | 調整升級獎勵 |
-| 11 | forceupgrade | 5h | 5M | ~110 | 強制升級機制，提前終止 |
-| 12 | upgrade3x | 6h | 5M | ~115 | 3 倍升級獎勵，提前終止 |
-| 13 | cashpenalty | 20h | 15M | ~140 | 囤錢懲罰 |
-| 14 | buildreward | 15h | 12M | ~140 | 基於路徑覆蓋率的建塔獎勵 |
-| 15 | pathaware | 17h | 15M | ~142 | 路徑感知建塔 |
-| **16** | **balanced** | **19h** | **15M** | **145.7** | 綜合平衡版 |
+| Run | Name | Time | Steps | Best Waves | Key Changes |
+|-----|------|------|-------|------------|-------------|
+| 1 | baseline | 24h | 5M | 101 | Initial version: score-based, 100-wave cap |
+| 2 | survival | 8h | 5M | 117 | Switched to survival objective, removed fixed build reward |
+| 3 | explore | 22h | 10M | 137 | Larger network 512×512, entropy ×3 |
+| 4 | walls | 14h | 10M | ~130 | Added wall actions + tower diversity reward |
+| 5 | balanced | 8h | 10M | ~125 | Reward balancing |
+| 6 | survival | 3h | 4M | ~100 | Experimental, terminated early |
+| 7 | unlimit | 11h | 10M | ~130 | Removed tower count limit (20→200) |
+| 8 | imitation | 11h | 10M | ~120 | First imitation learning attempt |
+| 9 | imitation2 | 17h | 15M | ~130 | Second imitation learning attempt |
+| 10 | upgrade | 16h | 15M | ~135 | Upgrade reward tuning |
+| 11 | forceupgrade | 5h | 5M | ~110 | Forced upgrade mechanism, terminated early |
+| 12 | upgrade3x | 6h | 5M | ~115 | 3× upgrade reward, terminated early |
+| 13 | cashpenalty | 20h | 15M | ~140 | Cash hoarding penalty |
+| 14 | buildreward | 15h | 12M | ~140 | Path-coverage-based build reward |
+| 15 | pathaware | 17h | 15M | ~142 | Path-aware tower placement |
+| **16** | **balanced** | **19h** | **15M** | **145.7** | Comprehensive reward balancing |
 | **17** | **imitation** | **11h** | **10M** | **165.6** | Behavioral Cloning + RL fine-tune |
-| 18 | quality | 6h | 6M | 151.6 | 升級壓力 + 低傷懲罰，失敗退化 |
-| 19 | efficiency | 1h | 0.5M | — | 效率獎勵實驗，立即終止 |
-| **20** | **fresh** | **36h** | **31M** | **155.4** | 從頭訓練，效率獎勵 |
+| 18 | quality | 6h | 6M | 151.6 | Upgrade pressure + low damage penalty, degraded |
+| 19 | efficiency | 1h | 0.5M | — | Efficiency reward experiment, terminated immediately |
+| **20** | **fresh** | **36h** | **31M** | **155.4** | From scratch with efficiency-based rewards |
 
-### 波數進步曲線
+### Wave Progress
 
 ```
-Run  1: ████████████████████ 101 波（基線）
-Run  2: ███████████████████████ 117 波
-Run  3: ███████████████████████████ 137 波
-Run 16: █████████████████████████████ 145.7 波
-Run 20: ██████████████████████████████ 155.4 波
-Run 17: ████████████████████████████████ 165.6 波 ← 最佳
-人類:   ██████████████████████████████ 151 波
+Run  1: ████████████████████ 101 waves (baseline)
+Run  2: ███████████████████████ 117 waves
+Run  3: ███████████████████████████ 137 waves
+Run 16: █████████████████████████████ 145.7 waves
+Run 20: ██████████████████████████████ 155.4 waves
+Run 17: ████████████████████████████████ 165.6 waves ← best
+Human:  ██████████████████████████████ 151 waves
 ```
 
-### 關鍵發現
+### Key Findings
 
-#### 1. 模仿學習是最大的突破
+#### 1. Imitation Learning Was the Biggest Breakthrough
 
-Run 17 用人類玩家的 3 場示範做 Behavioral Cloning 預訓練，再用 RL fine-tune，僅花 10.8 小時就達到 165.6 波，超越人類玩家（151 波）。
+Run 17 used 3 human demonstrations for Behavioral Cloning pretraining, followed by RL fine-tuning. It reached 165.6 waves in just 10.8 hours, surpassing the human player (151 waves).
 
-相比之下，純 RL（Run 1~16）花了 200+ 小時，從 101 波慢慢爬到 145.7 波。
+In contrast, pure RL (Runs 1–16) took 200+ hours to climb from 101 to 145.7 waves.
 
-#### 2. 獎勵工程的教訓
+#### 2. Reward Engineering Lessons
 
-經歷了 20 次迭代才學到：
-- **移除錯誤的獎勵比增加新獎勵更重要**：固定建塔獎勵導致 Agent 洗塔騙分；現金懲罰導致亂花錢
-- **Build-Sell 循環漏洞**：Run 1 的 Agent 發現建塔+賣塔可以刷 +0.2 獎勵，完全不打敵人
-- **同質化塔問題**：Agent 只用 Machine Gun + Cannon（DPS/成本最高），即使加了多樣性獎勵也沒用
-- **不升級問題**：Agent 寧願蓋新塔也不升級舊塔，因為建塔有即時獎勵但升級效益延遲
+Lessons learned over 20 iterations:
+- **Removing bad rewards matters more than adding new ones**: A fixed build reward caused the agent to spam towers for points; a cash penalty caused reckless spending
+- **Build-Sell exploit**: The Run 1 agent discovered it could cycle build→sell for +0.2 reward each time, ignoring enemies entirely
+- **Tower homogenization**: The agent only used Machine Gun + Cannon (highest DPS/cost), even with diversity rewards
+- **Refusal to upgrade**: The agent preferred building new towers over upgrading existing ones, because building gave instant reward while upgrade benefits were delayed
 
-#### 3. 過度訓練會退化
+#### 3. Overtraining Causes Degradation
 
-Run 20 在 17.6M 步達到 155.4 波高峰後，繼續訓練反而退化。Policy 變得過於自信但脆弱，entropy 持續下降，出現多次 policy collapse（波數跌到 80 以下）。
+Run 20 peaked at 155.4 waves at 17.6M steps, then degraded with continued training. The policy became overconfident but brittle, with entropy continuously declining and multiple policy collapses (waves dropping below 80).
 
-#### 4. 改獎勵後不能接續訓練
+#### 4. Reward Changes Break Resumed Training
 
-Run 18 從 Run 17（165.6 波）接續訓練，但修改了獎勵結構，結果 Value Function 嚴重失配，從 151.6 波一路退化。改獎勵後應該從頭訓練。
+Run 18 resumed from Run 17 (165.6 waves) but with modified rewards, causing severe value function mismatch. Performance degraded from 151.6 waves steadily downward. Reward changes require training from scratch.
 
-### Agent 仍未學會的行為
+### Behaviors the Agent Has Not Yet Learned
 
-- 持續升級塔到最高等級
-- 策略性地放置牆壁形成迷宮
-- 後期的資源管理（有錢不花 vs 亂花）
-- 針對不同波次調整防禦策略
+- Consistently upgrading towers to max level
+- Strategic wall placement to form mazes
+- Late-game resource management (hoarding vs. overspending)
+- Adapting defense strategy to different wave compositions
 
-## 使用方式
+## Usage
 
-### 安裝
+### Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 人類玩家模式
+### Human Player Mode
 
 ```bash
 python3 main.py
 ```
 
-### 訓練 Agent
+### Train an Agent
 
 ```bash
-# 從頭訓練
+# Train from scratch
 python3 rl/train.py train --run-name my_run --timesteps 10000000
 
-# 從 checkpoint 接續訓練
+# Resume from checkpoint
 python3 rl/train.py train --run-name my_run --timesteps 10000000 --resume runs/my_run/best_wave_model
 
-# 調整參數
+# Custom hyperparameters
 python3 rl/train.py train --run-name my_run --timesteps 10000000 \
     --ent-coef 0.02 --net-size 512 --batch-size 512
 ```
 
-### 錄製人類示範
+### Record Human Demonstrations
 
 ```bash
 python3 rl/record_demo.py --output demos/my_demo.npz --seed 42
 ```
 
-### Behavioral Cloning 預訓練
+### Behavioral Cloning Pretraining
 
 ```bash
-# 從頭 BC
+# From scratch
 python3 rl/pretrain.py --demos demos/ --epochs 50
 
-# 在既有模型上 fine-tune
+# Fine-tune existing model
 python3 rl/pretrain.py --demos demos/ --epochs 50 --resume runs/my_run/best_wave_model
 ```
 
-### 回放模型
+### Replay a Model
 
 ```bash
 python3 rl/replay.py --model runs/my_run/best_wave_model --seed 42
 ```
 
-## 技術細節
+## Technical Details
 
-- **演算法**：MaskablePPO（Proximal Policy Optimization + Action Masking）
-- **框架**：Stable-Baselines3 + sb3-contrib
-- **網路架構**：MLP [512, 512]（Policy 和 Value 各一個）
-- **並行環境**：10 個 SubprocVecEnv
-- **學習率**：3e-4
-- **Discount factor**：γ = 0.995
-- **Entropy coefficient**：0.02
-- **每步遊戲時間**：40 ticks（2 秒）
-- **最大步數/局**：2,500 步
-- **尋路**：BFS（比 A* 快 15 倍，支援牆壁動態改變路徑）
+- **Algorithm**: MaskablePPO (Proximal Policy Optimization + Action Masking)
+- **Framework**: Stable-Baselines3 + sb3-contrib
+- **Network**: MLP [512, 512] (separate policy and value networks)
+- **Parallel envs**: 10 SubprocVecEnv workers
+- **Learning rate**: 3e-4
+- **Discount factor**: γ = 0.995
+- **Entropy coefficient**: 0.02
+- **Game time per step**: 40 ticks (2 seconds)
+- **Max steps per episode**: 2,500
+- **Pathfinding**: BFS (15× faster than A*, supports dynamic wall rerouting)
 
 ## License
 
-本專案僅供學習與研究用途。WarZone Tower Defense Extended 的原始遊戲版權歸原作者所有。
+This project is for educational and research purposes only. The original WarZone Tower Defense Extended game is the property of its respective owners.
