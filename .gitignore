@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Model checkpoints & training artifacts
+*.zip
+runs/*/checkpoints/
+runs/*/best_wave_model*
+runs/*/best_model/
+runs/*/warzone_td_final*
+runs/*/tb_logs/
+runs/*/eval_logs/
+tb_logs/
+pretrained_model.zip
+pretrained_r16_bc.zip
+
+# Demo recordings
+demos/
+
+# Binary data & decompiled Flash
+bindata/
+decompiled/
+ffdec/
+*.swf
+*.mov
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE & editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local config
+.local_config/
+.claude/
+
+# Misc
+a
+nohup.out

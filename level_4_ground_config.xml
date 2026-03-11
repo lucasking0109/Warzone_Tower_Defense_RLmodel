@@ -1,0 +1,130 @@
+<config type="Object">
+	
+	<theme type="String">desert</theme>
+	
+	<gameStats type="Object">
+		
+		<!-- initial hit points for the base -->
+		<baseInitialHitPoints type="Number">10</baseInitialHitPoints>
+	
+		<!-- initial hit points for creeps -->
+		<creepInitialHitPoints type="Number">100</creepInitialHitPoints>
+		
+		<!-- initial hp increase -->
+		<initHpWaveIncrease type="Number">15</initHpWaveIncrease>
+	
+		<!-- added to hp increase * current wave -->
+		<hpWaveIncreaseMultiplier type="Number">1.045</hpWaveIncreaseMultiplier>
+		
+		<!-- how many creeps to spawn initially -->
+		<initSpawnCount type="Number">2</initSpawnCount>
+		
+		<maxSpawnCount type="Number">6</maxSpawnCount>
+		
+		<!-- multiplier for creeps per wave -->
+		<spawnWaveMultiplier type="Number">1.025</spawnWaveMultiplier>
+		
+		<!-- interval for creep insertion -->
+		<creepInsertInterval type="Number">1000</creepInsertInterval>
+		
+		<!-- time until first wave -->
+		<timeUntilFirstWave type="Number">10000</timeUntilFirstWave>
+		
+		<!-- time between waves -->
+		<waveWaitTime type="Number">5000</waveWaitTime>
+		
+		<!-- starting cash -->
+		<initialCash type="Number">1000</initialCash>
+		
+		<!-- initial cash per kill -->
+		<initCashPerKill type="Number">30</initCashPerKill>
+		
+		<cashWaveIncrease type="Number">1</cashWaveIncrease>
+		
+		<!-- money back ratio when selling a item -->
+		<cashValueMultiplier type="Number">.5</cashValueMultiplier>
+		
+		<!-- initial kill points -->
+		<initKillPoints type="Number">10</initKillPoints>
+			
+		<!-- kill point increase per wave -->
+		<killWaveIncrease type="Number">1</killWaveIncrease>
+
+	</gameStats>
+	
+	<introWaveList type="Array">
+		
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>	
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+	
+	</introWaveList>
+	
+	
+	<waveList type="Array">
+		
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		
+		<wave type="Object"><AIType type="String">heavyTankBoss</AIType></wave>
+		<wave type="Object">
+			<AIType type="String">speeder</AIType>
+			<timeOverride type="Number">15000</timeOverride>
+		</wave>
+		
+		
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		
+		<wave type="Object">
+			<AIType type="String">speeder</AIType>
+			<timeOverride type="Number">15000</timeOverride>
+		</wave>
+		<wave type="Object"><AIType type="String">speederBoss</AIType></wave>
+		
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">speeder</AIType></wave>
+		
+		
+		<wave type="Object">
+			<AIType type="String">mediumTank</AIType>
+			<timeOverride type="Number">15000</timeOverride>
+		</wave>
+		<wave type="Object"><AIType type="String">mediumTankBoss</AIType></wave>	
+
+		<wave type="Object"><AIType type="String">heavyTank</AIType></wave>
+		<wave type="Object"><AIType type="String">mediumTank</AIType></wave>
+		
+	</waveList>
+	
+</config>

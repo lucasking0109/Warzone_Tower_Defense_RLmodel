@@ -1,0 +1,2403 @@
+<config type="Object">
+
+	<main type="Object">
+		
+		<levelList type="Array">
+	
+			<level type="Object">
+				<name type="String"><![CDATA[Canyon Warfare]]></name>
+				<dir type="String"><![CDATA[_level_7]]></dir> 
+			</level>
+			
+			<level type="Object">
+				<name type="String"><![CDATA[Canyon Warfare ( ground only )]]></name>
+				<dir type="String"><![CDATA[_level_7_ground_only]]></dir> 
+			</level>
+	
+			<level type="Object">
+				<name type="String"><![CDATA[Dust Bowl]]></name>
+				<dir type="String"><![CDATA[_level_8]]></dir> 
+			</level>
+			
+			<level type="Object">
+				<name type="String"><![CDATA[Dust Bowl ( ground only )]]></name>
+				<dir type="String"><![CDATA[_level_8_ground_only]]></dir> 
+			</level>
+
+			<level type="Object">
+				<name type="String"><![CDATA[Field of Broken Dreams]]></name>
+				<dir type="String"><![CDATA[_level_1]]></dir> 
+			</level>
+			
+			<level type="Object">
+				<name type="String"><![CDATA[Field of Broken Dreams ( ground only )]]></name>
+				<dir type="String"><![CDATA[_level_1_ground_only]]></dir> 
+			</level>
+
+			<level type="Object">
+				<name type="String"><![CDATA[My Little Fortress]]></name>
+				<dir type="String"><![CDATA[_level_2]]></dir> 
+			</level>
+			
+			<level type="Object">
+				<name type="String"><![CDATA[My Little Fortress ( ground only )]]></name>
+				<dir type="String"><![CDATA[_level_2_ground_only]]></dir> 
+			</level>
+
+			<level type="Object">
+				<name type="String"><![CDATA[Desert Pass]]></name>
+				<dir type="String"><![CDATA[_level_3]]></dir> 
+			</level>
+			
+			<level type="Object">
+				<name type="String"><![CDATA[Desert Pass ( ground only )]]></name>
+				<dir type="String"><![CDATA[_level_3_ground_only]]></dir> 
+			</level>
+
+			<level type="Object">
+				<name type="String"><![CDATA[Enclave]]></name>
+				<dir type="String"><![CDATA[_level_4]]></dir> 
+			</level>
+			
+			<level type="Object">
+				<name type="String"><![CDATA[Enclave ( ground only )]]></name>
+				<dir type="String"><![CDATA[_level_4_ground_only]]></dir> 
+			</level>
+
+			<level type="Object">
+				<name type="String"><![CDATA[Red Planet]]></name>
+				<dir type="String"><![CDATA[_level_5]]></dir> 
+			</level>
+			
+			<level type="Object">
+				<name type="String"><![CDATA[Red Planet ( ground only )]]></name>
+				<dir type="String"><![CDATA[_level_5_ground_only]]></dir> 
+			</level>
+
+			<level type="Object">
+				<name type="String"><![CDATA[Split Decision]]></name>
+				<dir type="String"><![CDATA[_level_6]]></dir> 
+			</level>
+			
+			<level type="Object">
+				<name type="String"><![CDATA[Split Decision ( ground only )]]></name>
+				<dir type="String"><![CDATA[_level_6_ground_only]]></dir> 
+			</level>
+	
+			
+		</levelList>
+		
+		<modeList type="Array">
+			<mode type="Object">
+				<label type="String"><![CDATA[default]]></label>
+				<data type="String"><![CDATA[default]]></data>
+			</mode>
+			<mode type="Object">
+				<label type="String"><![CDATA[quick cash]]></label>
+				<data type="String"><![CDATA[quick_cash]]></data>
+			</mode>
+			<mode type="Object">
+				<label type="String"><![CDATA[5k start]]></label>
+				<data type="String"><![CDATA[cash_5k]]></data>
+			</mode>
+			<mode type="Object">
+				<label type="String"><![CDATA[2x cash 2x difficulty]]></label>
+				<data type="String"><![CDATA[2x]]></data>
+			</mode>
+			<mode type="Object">
+				<label type="String"><![CDATA[accellerated play]]></label>
+				<data type="String"><![CDATA[quickPlay]]></data>
+			</mode>
+			
+			<mode type="Object">
+				<label type="String"><![CDATA[10 tower limit]]></label>
+				<data type="String"><![CDATA[limit_10]]></data>
+			</mode>
+			
+			<mode type="Object">
+				<label type="String"><![CDATA[20 tower limit]]></label>
+				<data type="String"><![CDATA[limit_20]]></data>
+			</mode>
+			
+			<mode type="Object">
+				<label type="String"><![CDATA[20k fixed]]></label>
+				<data type="String"><![CDATA[20k_fixed]]></data>
+			</mode>
+			
+			<mode type="Object">
+				<label type="String"><![CDATA[50k fixed]]></label>
+				<data type="String"><![CDATA[50k_fixed]]></data>
+			</mode>
+			
+			<mode type="Object">
+				<label type="String"><![CDATA[100k fixed]]></label>
+				<data type="String"><![CDATA[100k_fixed]]></data>
+			</mode>
+		</modeList>
+		
+		<modeDescriptions type="Object">
+			<mode_default type="String"><![CDATA[default mode is recommended for first time players.]]></mode_default>
+			<mode_quick_cash type="String"><![CDATA[just like default mode, but with a much faster cash flow.]]></mode_quick_cash>
+			<mode_2x type="String"><![CDATA[In this mode of play starting credits and cash flow are doubled, but so is the difficulty of your enemies.]]></mode_2x>
+			<mode_limit_10 type="String"><![CDATA[In this mode of play you are limited to a maximum of 10 towers at once. Choose wisely!]]></mode_limit_10>
+			<mode_limit_20 type="String"><![CDATA[In this mode of play you are limited to a maximum of 20 towers at once. Choose wisely!]]></mode_limit_20>
+			<mode_cash_5k type="String"><![CDATA[In this mode of play you start 5000 credits and initial enemies are tougher.]]></mode_cash_5k>
+			<mode_20k_fixed type="String"><![CDATA[In this mode of play you start with 20000 credits, but will not earn more.]]></mode_20k_fixed>
+			<mode_50k_fixed type="String"><![CDATA[In this mode of play you start with 50000 credits, but will not earn more.]]></mode_50k_fixed>
+			<mode_100k_fixed type="String"><![CDATA[In this mode of play you start with 100000 credits, but will not earn more.]]></mode_100k_fixed>
+			<mode_quickPlay type="String"><![CDATA[In this mode of play enemy movement rates are doubled and hit points a halfed.]]></mode_quickPlay>
+		</modeDescriptions>
+		
+		<inGameMenu type="Object">
+			<screenLoc type="String">703,585</screenLoc>
+		</inGameMenu>
+		
+		<popupMenu type="Object">
+			<screenLoc type="String">416,200</screenLoc>
+		</popupMenu>
+		
+		<scoresPrompt type="Object">
+			<screenLoc type="String">281,90</screenLoc>
+		</scoresPrompt>
+		
+		<badWordFilter type="String"><![CDATA[fuck,shit,penis,testicles,pussy,cock,asshole,nigger,kike]]></badWordFilter>
+		
+	</main>
+	
+	<gameUI type="Object">
+		
+		<waveController type="Object">
+			<screenLoc type="String">700,520</screenLoc>
+		</waveController>
+
+		<scoreBoard type="Object">
+			<screenLoc type="String">710,498</screenLoc>
+		</scoreBoard>
+		
+
+		<itemMenu type="Object">
+			
+			<screenLoc type="String">0,493</screenLoc>	
+			
+			<infoPanel type="Object">
+				<screenLoc type="String">330,5</screenLoc>
+			</infoPanel>
+			
+			<buttonConfigList type="Array">
+				
+				<itemButton type="Object">
+					<x type="Number">10</x>
+					<y type="Number">25</y>
+					<itemId type="String"><![CDATA[bulletTower]]></itemId>
+					<labelText type="String"><![CDATA[machine<BR />gun]]></labelText>
+					<icon type="String"><![CDATA[MachineGunTowerIcon]]></icon>
+				</itemButton>
+				
+				<itemButton type="Object">
+					<x type="Number">55</x>
+					<y type="Number">25</y>
+					<itemId type="String"><![CDATA[cannonTower]]></itemId>
+					<labelText type="String"><![CDATA[<BR />cannon]]></labelText>
+					<icon type="String"><![CDATA[CannonTowerIcon]]></icon>
+				</itemButton>
+				
+				<itemButton type="Object">
+					<x type="Number">100</x>
+					<y type="Number">25</y>
+					<itemId type="String"><![CDATA[missileTower]]></itemId>
+					<labelText type="String"><![CDATA[missile<BR />turret]]></labelText>
+					<icon type="String"><![CDATA[MissileTowerIcon]]></icon>
+				</itemButton>
+				
+				<itemButton type="Object">
+					<x type="Number">145</x>
+					<y type="Number">25</y>
+					<itemId type="String"><![CDATA[flakTower]]></itemId>
+					<labelText type="String"><![CDATA[flak<BR />cannon]]></labelText>
+					<icon type="String"><![CDATA[FlakCannonIcon]]></icon>
+				</itemButton>
+				
+				<itemButton type="Object">
+					<x type="Number">190</x>
+					<y type="Number">25</y>
+					<itemId type="String"><![CDATA[fireTower]]></itemId>
+					<labelText type="String"><![CDATA[flame<BR />thrower]]></labelText>
+					<icon type="String"><![CDATA[FireTowerIcon]]></icon>
+				</itemButton>
+				
+				<itemButton type="Object">
+					<x type="Number">235</x>
+					<y type="Number">25</y>
+					<itemId type="String"><![CDATA[shockTower]]></itemId>
+					<labelText type="String"><![CDATA[pulse<BR />emitter]]></labelText>
+					<icon type="String"><![CDATA[ShockTowerIcon]]></icon>
+				</itemButton>
+				
+	
+				<itemButton type="Object">
+					<x type="Number">280</x>
+					<y type="Number">25</y>
+					<itemId type="String"><![CDATA[laserTower]]></itemId>
+					<labelText type="String"><![CDATA[laser<BR />cannon]]></labelText>
+					<icon type="String"><![CDATA[LaserTowerIcon]]></icon>
+				</itemButton>
+				
+
+				<itemButton type="Object">
+					<x type="Number">10</x>
+					<y type="Number">68</y>
+					<itemId type="String"><![CDATA[artilleryTower]]></itemId>
+					<labelText type="String"><![CDATA[heavy<BR />cannon]]></labelText>
+					<icon type="String"><![CDATA[ArtilleryTowerIcon]]></icon>
+				</itemButton>
+				
+				<itemButton type="Object">
+					<x type="Number">55</x>
+					<y type="Number">68</y>
+					<itemId type="String"><![CDATA[PlasmaTower]]></itemId>
+					<labelText type="String"><![CDATA[plasma<BR />cannon]]></labelText>
+					<icon type="String"><![CDATA[PlasmaTowerIcon]]></icon>
+				</itemButton>
+				
+				<itemButton type="Object">
+					<x type="Number">145</x>
+					<y type="Number">68</y>
+					<itemId type="String"><![CDATA[block]]></itemId>
+					<labelText type="String"><![CDATA[wall<BR />block]]></labelText>
+					<icon type="String"><![CDATA[WallBlockIcon]]></icon>
+				</itemButton>
+				
+				<itemButton type="Object">
+					<x type="Number">190</x>
+					<y type="Number">68</y>
+					<itemId type="String"><![CDATA[standardBomb]]></itemId>
+					<labelText type="String"><![CDATA[<BR />bomb]]></labelText>
+					<icon type="String"><![CDATA[FireBombIcon]]></icon>
+				</itemButton>
+				
+				<itemButton type="Object">
+					<x type="Number">235</x>
+					<y type="Number">68</y>
+					<itemId type="String"><![CDATA[EMP]]></itemId>
+					<labelText type="String"><![CDATA[<BR />E.M.P]]></labelText>
+					<icon type="String"><![CDATA[FireBombIcon]]></icon>
+				</itemButton>
+				
+				<itemButton type="Object">
+					<x type="Number">280</x>
+					<y type="Number">68</y>
+					<itemId type="String"><![CDATA[nukeBomb]]></itemId>
+					<labelText type="String"><![CDATA[<BR />nuke]]></labelText>
+					<icon type="String"><![CDATA[NukeBombIcon]]></icon>
+				</itemButton>
+				
+			
+			</buttonConfigList>
+			
+			<upgradeRefs type="Object">
+				
+				<bulletTowerII type="Object">
+					<cost type="Number">200</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[bulletTowerIII]]></upgradePaths>
+						<itemName type="String">machine gun II</itemName>
+						<range type="Number">170</range>
+						<skinName type="String"><![CDATA[MachineGunTower_2]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">48</directDamage>
+					</projectile>
+				</bulletTowerII>
+				
+				<bulletTowerIII type="Object">
+					<cost type="Number">400</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[bulletTowerIV]]></upgradePaths>
+						<itemName type="String">machine gun III</itemName>
+						<range type="Number">175</range>
+						<skinName type="String"><![CDATA[MachineGunTower_3]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">96</directDamage>
+					</projectile>
+				</bulletTowerIII>
+				
+				<bulletTowerIV type="Object">
+					<cost type="Number">800</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[bulletTowerV]]></upgradePaths>
+						<itemName type="String">machine gun IV</itemName>
+						<range type="Number">180</range>
+						<skinName type="String"><![CDATA[MachineGunTower_4]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">192</directDamage>
+					</projectile>
+				</bulletTowerIV>
+				
+				<bulletTowerV type="Object">
+					<cost type="Number">800</cost>
+					<item type="Object">
+						<reloadTime type="Number">250</reloadTime>
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String">vulcan cannon</itemName>
+						<range type="Number">210</range>
+						<skinName type="String"><![CDATA[MachineGunTower_5]]></skinName>
+						<info type="String"><![CDATA[VULCAN CANNON - Features an increased rate of fire , range , and has a 10% chance of doing double damage. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">81b4246443570087</shopId>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">288</directDamage>
+						<criticalChance type="Number">.1</criticalChance>
+					</projectile>
+				</bulletTowerV>
+				
+				<cannonTowerII type="Object">
+					<cost type="Number">320</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[cannonTowerIII]]></upgradePaths>
+						<itemName type="String">cannon II</itemName>
+						<range type="Number">185</range>
+						<skinName type="String"><![CDATA[CannonTower_2]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">360</indirectDamage>
+					</projectile>
+				</cannonTowerII>
+				
+				<cannonTowerIII type="Object">
+					<cost type="Number">640</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[cannonTowerIV]]></upgradePaths>
+						<itemName type="String">cannon III</itemName>
+						<range type="Number">190</range>
+						<skinName type="String"><![CDATA[CannonTower_3]]></skinName>	
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">720</indirectDamage>
+					</projectile>
+				</cannonTowerIII>
+				
+				<cannonTowerIV type="Object">
+					<cost type="Number">1280</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[cannonTowerV]]></upgradePaths>
+						<itemName type="String">cannon IV</itemName>
+						<range type="Number">195</range>
+						<skinName type="String"><![CDATA[CannonTower_4]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">1440</indirectDamage>
+					</projectile>
+				</cannonTowerIV>
+				
+				<cannonTowerV type="Object">
+					<cost type="Number">1280</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String">auto cannon</itemName>
+						<range type="Number">220</range>
+						<reloadTime type="Number">1000</reloadTime>
+						<skinName type="String"><![CDATA[CannonTower_5]]></skinName>
+						<info type="String"><![CDATA[AUTO CANNON - Rate of fire is doubled, damage increased, and adds a 25% chance of doing double damage. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">4cdb50d4a5762133</shopId>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">1920</indirectDamage>
+						<criticalChance type="Number">.25</criticalChance>
+					</projectile>
+				</cannonTowerV>
+		
+				<missileTowerII type="Object">
+					<cost type="Number">240</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[missileTowerIII]]></upgradePaths>
+						<itemName type="String">missile turret II</itemName>
+						<range type="Number">275</range>
+						<skinName type="String"><![CDATA[MissileTower_2]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">540</indirectDamage>
+					</projectile>
+				</missileTowerII>
+				
+				<missileTowerIII type="Object">
+					<cost type="Number">480</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[missileTowerIV]]></upgradePaths>
+						<itemName type="String">missile turret III</itemName>
+						<range type="Number">280</range>
+						<skinName type="String"><![CDATA[MissileTower_3]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">1080</indirectDamage>
+					</projectile>
+				</missileTowerIII>
+				
+				<missileTowerIV type="Object">
+					<cost type="Number">960</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[missileTowerV]]></upgradePaths>
+						<itemName type="String">missile turret IV</itemName>
+						<range type="Number">285</range>
+						<skinName type="String"><![CDATA[MissileTower_4]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">2160</indirectDamage>
+
+					</projectile>
+				</missileTowerIV>
+				
+				<missileTowerV type="Object">
+					<cost type="Number">960</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String">L.R missile</itemName>
+						<range type="Number">450</range>
+						<skinName type="String"><![CDATA[MissileTower_5]]></skinName>
+						<info type="String"><![CDATA[LONG RANGE MISSILE TURRET - Drastically increased targeting range, 50% more damage, and a 25% chance of doing double damage. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">8d332ec5d0232216</shopId>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">3240</indirectDamage>
+						<criticalChance type="Number">.25</criticalChance>
+					</projectile>
+				</missileTowerV>
+				
+				<artilleryTowerII type="Object">
+					<cost type="Number">800</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[artilleryTowerIII]]></upgradePaths>
+						<itemName type="String">heavy cannon II</itemName>
+						<range type="Number">310</range>
+						<skinName type="String"><![CDATA[ArtilleryTower_2]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">2400</indirectDamage>
+					</projectile>
+				</artilleryTowerII>
+				
+				<artilleryTowerIII type="Object">
+					<cost type="Number">1600</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[artilleryTowerIV]]></upgradePaths>
+						<itemName type="String">heavy cannon III</itemName>
+						<range type="Number">320</range>
+						<skinName type="String"><![CDATA[ArtilleryTower_3]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">4800</indirectDamage>
+					</projectile>
+				</artilleryTowerIII>
+				
+				<artilleryTowerIV type="Object">
+					<cost type="Number">3200</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[artilleryTowerV]]></upgradePaths>
+						<itemName type="String">heavy cannon IV</itemName>
+						<range type="Number">330</range>
+						<skinName type="String"><![CDATA[ArtilleryTower_4]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">9600</indirectDamage>
+					</projectile>
+				</artilleryTowerIV>
+				
+				<artilleryTowerV type="Object">
+					<cost type="Number">3200</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String">Heavy Artillery</itemName>
+						<range type="Number">360</range>
+						<skinName type="String"><![CDATA[ArtilleryTower_5]]></skinName>
+						<info type="String"><![CDATA[HEAVY ARTILLERY - 100% more damage, a 50% chance of doing double damage, and an increased area of effect. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">599b3f5f430fe20f</shopId>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">19200</indirectDamage>
+						<explosionRadius type="Number">120</explosionRadius>
+						<criticalChance type="Number">.5</criticalChance>
+						<explosionRefName type="String"><![CDATA[projectile_explosion_heavy_shell_shrapnel|projectile_explosion_heavy_shell_smoke]]></explosionRefName>
+						<skinName type="String"><![CDATA[HeavyShell]]></skinName>
+					</projectile>
+				</artilleryTowerV>
+				
+				<fireTowerII type="Object">
+					<cost type="Number">480</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[fireTowerIII]]></upgradePaths>
+						<itemName type="String">flame thrower II</itemName>
+						<range type="Number">125</range>
+						<skinName type="String"><![CDATA[FireTower_2]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">8</indirectDamage>
+					</projectile>
+				</fireTowerII>
+				
+				<fireTowerIII type="Object">
+					<cost type="Number">960</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[fireTowerIV]]></upgradePaths>
+						<itemName type="String">flame thrower III</itemName>
+						<range type="Number">130</range>
+						<skinName type="String"><![CDATA[FireTower_3]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">16</indirectDamage>
+					</projectile>
+				</fireTowerIII>
+				
+				<fireTowerIV type="Object">
+					<cost type="Number">1920</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[fireTowerV]]></upgradePaths>
+						<itemName type="String">flame thrower IV</itemName>
+						<range type="Number">135</range>
+						<skinName type="String"><![CDATA[FireTower_4]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">32</indirectDamage>
+					</projectile>
+				</fireTowerIV>
+				
+				<fireTowerV type="Object">
+					<cost type="Number">1920</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String">heavy flame</itemName>
+						<range type="Number">140</range>
+						<skinName type="String"><![CDATA[FireTower_5]]></skinName>
+						<angleRandomness type="Number">.225</angleRandomness>
+						<reloadTime type="Number">100</reloadTime>
+						
+						<info type="String"><![CDATA[HEAVY FLAME THROWER - 100% increase in damage, a 5% chance to do double damage, and an increased area of effect. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">26783ee03a4e16e3</shopId>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">64</indirectDamage>
+						
+						<trailConfig type="Object">
+							<width type="Number">11</width>
+							<height type="Number">11</height>
+							<offset type="Number">0</offset>
+							<bmdName type="String"><![CDATA[particle: flare]]></bmdName>
+						</trailConfig>
+						<explosionRadius type="Number">40</explosionRadius>
+						<criticalChance type="Number">.05</criticalChance>
+					</projectile>
+				</fireTowerV>
+				
+				<gLaserTowerII type="Object">
+					<cost type="Number">800</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[gLaserTowerIII]]></upgradePaths>
+						<itemName type="String">laser cannon II</itemName>
+						<range type="Number">410</range>
+						<skinName type="String"><![CDATA[LaserTower_2]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">1000</directDamage>
+						<beamLength type="Number">410</beamLength>
+					</projectile>
+				</gLaserTowerII>
+				
+				<gLaserTowerIII type="Object">
+					<cost type="Number">1600</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[gLaserTowerIV]]></upgradePaths>
+						<itemName type="String">laser cannon III</itemName>
+						<range type="Number">420</range>
+						<skinName type="String"><![CDATA[LaserTower_3]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">2000</directDamage>
+						<beamLength type="Number">420</beamLength>
+					</projectile>
+				</gLaserTowerIII>
+				
+				<gLaserTowerIV type="Object">
+					<cost type="Number">3200</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[gLaserTowerV]]></upgradePaths>
+						<itemName type="String">laser cannon IV</itemName>
+						<range type="Number">430</range>
+						<skinName type="String"><![CDATA[LaserTower_4]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">4000</directDamage>
+						<beamLength type="Number">430</beamLength>
+					</projectile>
+				</gLaserTowerIV>
+				
+				<gLaserTowerV type="Object">
+					<cost type="Number">3200</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String">heavy laser</itemName>
+						<range type="Number">600</range>
+						<skinName type="String"><![CDATA[LaserTower_5]]></skinName>
+						<info type="String"><![CDATA[HEAVY LASER CANNON - 150% increase in damage and drastically increased range. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">80d9b43b18ac7ff9</shopId>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">10000</directDamage>
+						<beamLength type="Number">600</beamLength>
+						<skinName type="String"><![CDATA[HeavyLaserSkin]]></skinName>
+					</projectile>
+				</gLaserTowerV>
+				
+				<aLaserTowerI type="Object">
+					<cost type="Number">1</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[aLaserTowerII]]></upgradePaths>
+						<itemName type="String">air laser I</itemName>
+						<range type="Number">600</range>
+						<targeting type="String">air</targeting>
+						<skinName type="String">AirLaserTower</skinName>			
+						<info type="String"><![CDATA[AIR LASER - Converts your laser cannon into a long range anti-air weapon.]]></info>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">1000</directDamage>
+						<skinName type="String"><![CDATA[AirLaserSkin]]></skinName>
+						<beamLength type="Number">400</beamLength>
+					</projectile>
+				</aLaserTowerI>
+				
+				<aLaserTowerII type="Object">
+					<cost type="Number">800</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[aLaserTowerIII]]></upgradePaths>
+						<itemName type="String">air laser II</itemName>
+						<range type="Number">410</range>
+						<skinName type="String"><![CDATA[AirLaserTower_2]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">2000</directDamage>
+						<beamLength type="Number">410</beamLength>
+					</projectile>
+				</aLaserTowerII>
+				
+				<aLaserTowerIII type="Object">
+					<cost type="Number">1600</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[aLaserTowerIV]]></upgradePaths>
+						<itemName type="String">air laser III</itemName>
+						<range type="Number">420</range>
+						<skinName type="String"><![CDATA[AirLaserTower_3]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">4000</directDamage>
+						<beamLength type="Number">420</beamLength>
+					</projectile>
+				</aLaserTowerIII>
+				
+				<aLaserTowerIV type="Object">
+					<cost type="Number">3200</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[aLaserTowerV]]></upgradePaths>
+						<itemName type="String">air laser IV</itemName>
+						<range type="Number">430</range>
+						<skinName type="String"><![CDATA[AirLaserTower_4]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">8000</directDamage>
+						<beamLength type="Number">430</beamLength>
+					</projectile>
+				</aLaserTowerIV>
+				
+				<aLaserTowerV type="Object">
+					<cost type="Number">3200</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String">E.M.P laser</itemName>
+						<range type="Number">500</range>
+						<skinName type="String"><![CDATA[AirLaserTower_5]]></skinName>
+						<info type="String"><![CDATA[E.M.P LASER - 50% increase in damage and has a 75% slow effect for 3 seconds on each target hit. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">92ae385a1064799b</shopId>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">12000</directDamage>
+						<beamLength type="Number">500</beamLength>
+						<skinName type="String"><![CDATA[EmpLaserSkin]]></skinName>
+						
+						<slow type="Object">
+							<ratio type="Number">.25</ratio>
+							<duration type="Number">3000</duration>		
+						</slow>
+						
+					</projectile>
+				</aLaserTowerV>
+				
+				<shockTowerII type="Object">
+					
+					<cost type="Number">800</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[shockTowerIII]]></upgradePaths>
+						<itemName type="String">pulse emitter II</itemName>
+						<range type="Number">60</range>
+						<skinName type="String"><![CDATA[ShockTower_2]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">1500</indirectDamage>
+						<explosionRadius type="Number">90</explosionRadius>
+					</projectile>
+					
+				</shockTowerII>
+				
+				<shockTowerIII type="Object">
+					
+					<cost type="Number">1600</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[shockTowerIV]]></upgradePaths>
+						<itemName type="String">pulse emitter III</itemName>
+						<range type="Number">65</range>
+						<skinName type="String"><![CDATA[ShockTower_3]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">3000</indirectDamage>
+						<explosionRadius type="Number">95</explosionRadius>
+					</projectile>
+					
+				</shockTowerIII>
+				
+				<shockTowerIV type="Object">
+					
+					<cost type="Number">3200</cost>
+					
+					<item type="Object">
+						
+						<upgradePaths type="String"><![CDATA[groundPulse,airPulse]]></upgradePaths>
+						<itemName type="String">pulse emitter IV</itemName>
+						<range type="Number">70</range>
+						<skinName type="String"><![CDATA[ShockTower_4]]></skinName>
+						
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">6000</indirectDamage>
+						<explosionRadius type="Number">100</explosionRadius>	
+					</projectile>
+					
+				</shockTowerIV>
+				
+				<groundPulse type="Object">
+					
+					<cost type="Number">3200</cost>
+					
+					<item type="Object">
+						<targeting type="String">ground</targeting>
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String">shockwave</itemName>
+						<range type="Number">90</range>
+						<skinName type="String"><![CDATA[ShockTower_ground]]></skinName>
+						<reloadTime type="Number">6000</reloadTime>
+						
+						<info type="String"><![CDATA[SHOCKWAVE EMITTER - 50% increased damage, increased range, and has a 25% slow effect for 5 seconds on each target hit. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">840c465bef93d2eb</shopId>
+						
+					</item>
+					<projectile type="Object">
+						
+						<indirectDamage type="Number">9000</indirectDamage>
+						<explosionRadius type="Number">120</explosionRadius>
+				
+						<slow type="Object">
+							<ratio type="Number">.75</ratio>
+							<duration type="Number">5000</duration>		
+						</slow>
+						
+						<explodeSkin type="String">AreaEffect_ground</explodeSkin>
+						
+					</projectile>
+				</groundPulse>
+			
+				<airPulse type="Object">
+					
+					<cost type="Number">3200</cost>
+		
+					<item type="Object">
+						<targeting type="String">air</targeting>
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String">air pulse</itemName>
+						<range type="Number">100</range>
+						<skinName type="String"><![CDATA[ShockTower_air]]></skinName>
+						<reloadTime type="Number">4000</reloadTime>
+						
+						<info type="String"><![CDATA[AIR PULSE EMITTER - 100% increased damage, increased range, and has a 50% slow effect for 5 seconds on each target hit. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">b96ecf36400a85c1</shopId>
+						
+					</item>
+					<projectile type="Object">
+						
+						<indirectDamage type="Number">10000</indirectDamage>
+						<explosionRadius type="Number">140</explosionRadius>
+		
+						<slow type="Object">
+							<ratio type="Number">.5</ratio>
+							<duration type="Number">5000</duration>		
+						</slow>
+						
+						<explodeSkin type="String">AreaEffect_air</explodeSkin>
+					</projectile>
+					
+				</airPulse>
+				
+				
+				
+				
+				<flakTowerII type="Object">
+					<cost type="Number">320</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[flakTowerIII]]></upgradePaths>
+						<itemName type="String">flak cannon II</itemName>
+						<range type="Number">185</range>
+						<skinName type="String"><![CDATA[FlakTower_2]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">150</indirectDamage>
+					</projectile>
+					
+				</flakTowerII>
+				
+				<flakTowerIII type="Object">
+					<cost type="Number">640</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[flakTowerIV]]></upgradePaths>
+						<itemName type="String">flak cannon III</itemName>
+						<range type="Number">190</range>
+						<skinName type="String"><![CDATA[FlakTower_3]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">300</indirectDamage>
+					</projectile>
+					
+				</flakTowerIII>
+				
+				<flakTowerIV type="Object">
+					<cost type="Number">1280</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[flakTowerV]]></upgradePaths>
+						<itemName type="String">flak cannon IV</itemName>
+						<range type="Number">195</range>
+						<skinName type="String"><![CDATA[FlakTower_4]]></skinName>
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">600</indirectDamage>
+					</projectile>
+					
+				</flakTowerIV>
+				
+				<flakTowerV type="Object">
+					<cost type="Number">1280</cost>
+		
+					<item type="Object">
+						
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String">heavy flak</itemName>
+						<range type="Number">215</range>
+						<skinName type="String"><![CDATA[FlakTower_5]]></skinName>
+						<reloadTime type="Number">1000</reloadTime>
+						<shotsAtOnce type="Number">6</shotsAtOnce>
+						<angleSpread type="Number">.15</angleSpread>
+						<info type="String"><![CDATA[HEAVY FLAK CANNON - 50% extra damage per shot, 2 extra shots, and a 25% chance of doing double damage. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">c339232d6660ca5f</shopId>
+						
+					</item>
+					<projectile type="Object">
+						<indirectDamage type="Number">900</indirectDamage>
+						<explosionRadius type="Number">40</explosionRadius>
+						<criticalChance type="Number">.25</criticalChance>
+						
+					</projectile>
+					
+				</flakTowerV>
+				
+				<PlasmaTowerII>
+					<cost type="Number">800</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[PlasmaTowerIII]]></upgradePaths>
+						<itemName type="String">plasma cannon II</itemName>
+						<range type="Number">185</range>
+						<skinName type="String"><![CDATA[PlasmaTower_2]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">240</directDamage>
+					</projectile>
+					
+				</PlasmaTowerII>
+				
+				<PlasmaTowerIII>
+					<cost type="Number">1600</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[PlasmaTowerIV]]></upgradePaths>
+						<itemName type="String">plasma cannon III</itemName>
+						<range type="Number">190</range>
+						<skinName type="String"><![CDATA[PlasmaTower_3]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">480</directDamage>
+					</projectile>
+					
+				</PlasmaTowerIII>
+				
+				<PlasmaTowerIV>
+					<cost type="Number">3200</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[PlasmaTowerV]]></upgradePaths>
+						<itemName type="String">plasma cannon IV</itemName>
+						<range type="Number">195</range>
+						<skinName type="String"><![CDATA[PlasmaTower_4]]></skinName>
+					</item>
+					<projectile type="Object">
+						<directDamage type="Number">960</directDamage>
+					</projectile>
+					
+				</PlasmaTowerIV>
+				
+				<PlasmaTowerV>
+					<cost type="Number">3200</cost>
+					<item type="Object">
+						<upgradePaths type="String"><![CDATA[]]></upgradePaths>
+						<itemName type="String"><![CDATA[heavy plasma]]></itemName>
+						<range type="Number">200</range>
+						<skinName type="String"><![CDATA[PlasmaTower_5]]></skinName>
+						
+						<info type="String"><![CDATA[HEAVY PLASMA CANNON - 100% increase in damage, a 10% chance of doing double damage, and adds area effect damage to each shot. This item must be purchased from the upgrade shop.]]></info>
+						<shopId type="String">cee4ea4e17314276</shopId>
+					</item>
+					<projectile type="Object">
+						<useFallOff type="Boolean">0</useFallOff>
+						<directDamage type="Number">0</directDamage>
+						<indirectDamage type="Number">1920</indirectDamage>
+						<skinName type="String"><![CDATA[PlasmaProjectile]]></skinName>
+						<explosionRadius type="Number">60</explosionRadius>
+						<criticalChance type="Number">.1</criticalChance>
+						<explosionRefName type="String"><![CDATA[projectile_explosion_plasma_flare_shrapnel|projectile_explosion_plasma_flare_explode]]></explosionRefName>
+					</projectile>
+					
+					
+				</PlasmaTowerV>
+				
+				
+				
+				
+			</upgradeRefs>
+			
+			<itemRefs type="Object">
+				
+				<standardBomb type="Object">
+					<targeting type="String">all</targeting>
+					<blockSize type="Number">0</blockSize>
+					<cost type="Number">150</cost>
+					<info type="String"><![CDATA[BOMB (W) - A weapon of last resort for when your defenses fail. ]]></info>
+					<itemName type="String">bomb</itemName>
+					<bomb type="String">standardBomb</bomb>
+				</standardBomb>
+				
+				<EMP type="Object">
+					<targeting type="String">all</targeting>
+					<blockSize type="Number">0</blockSize>
+					<cost type="Number">500</cost>
+					<info type="String"><![CDATA[E.M.P (E) - Slows enemy movement by 50% for all enemies within the target radius for 10 seconds.]]></info>
+					<itemName type="String">E.M.P</itemName>
+					<bomb type="String">EMP</bomb>	
+				</EMP>
+				
+				<nukeBomb type="Object">
+					<targeting type="String">all</targeting>
+					<blockSize type="Number">0</blockSize>
+					<cost type="Number">1000</cost>
+					<info type="String"><![CDATA[NUKE (R) - A bomb which effects a very large area and is very damaging, but also quite expensive. Damage is more intense closer to the center of the blast.]]></info>
+					<itemName type="String">nuke</itemName>
+					<bomb type="String">nukeBomb</bomb>
+				</nukeBomb>
+				
+				<cannonTower type="Object">
+					<blockSize type="Number">2</blockSize>
+					<cost type="Number">400</cost>
+					<info type="String"><![CDATA[CANNON (2) - medium range turret capable of dealing significant damage to ground units.]]></info>
+					<tower type="Object">
+						<upgradePaths type="String"><![CDATA[cannonTowerII]]></upgradePaths>
+						<itemName type="String">cannon I</itemName>
+						<targeting type="String">ground</targeting>
+						<skinName type="String">CannonTower</skinName>
+						<range type="Number">180</range>
+						<reloadTime type="Number">2000</reloadTime>
+						<projectileRefName type="String">cannon</projectileRefName>	
+						<shotSound type="String">CannonShot</shotSound>
+						<useShotSoundLoop type="Boolean">0</useShotSoundLoop>	
+					</tower>
+				</cannonTower>
+
+				<bulletTower type="Object">
+					<blockSize type="Number">2</blockSize>
+					<cost type="Number">250</cost>
+					<info type="String"><![CDATA[MACHINE GUN (1) - A quick firing medium range turret capable of hitting air and ground units.]]></info>
+					<tower type="Object">
+						<upgradePaths type="String"><![CDATA[bulletTowerII]]></upgradePaths>
+						<itemName type="String">machine gun I</itemName>
+						<targeting type="String">all</targeting>
+						<skinName type="String">MachineGunTower</skinName>
+						<range type="Number">165</range>
+						<reloadTime type="Number">500</reloadTime>
+						<projectileRefName type="String">bullet</projectileRefName>
+						<shotSound type="String">BulletSound</shotSound>
+						<useShotSoundLoop type="Boolean">0</useShotSoundLoop>
+					</tower>
+				</bulletTower>
+				
+				<missileTower type="Object">
+					<blockSize type="Number">2</blockSize>
+					<cost type="Number">300</cost>
+					<info type="String"><![CDATA[MISSILE TURRET (3) - A long range turret which fires heat seeking surface to air missiles. If the missiles  target is destroyed these missiles can acquire other near by targets.]]></info>
+					<tower type="Object">
+						<upgradePaths type="String"><![CDATA[missileTowerII]]></upgradePaths>
+						<itemName type="String">missile turret I</itemName>
+						<targeting type="String">air</targeting>
+						<skinName type="String">MissileTower</skinName>
+						<range type="Number">270</range>
+						<reloadTime type="Number">2000</reloadTime>
+						<projectileRefName type="String">missile</projectileRefName>
+						<shotSound type="String">MissileShot</shotSound>
+						<useShotSoundLoop type="Boolean">0</useShotSoundLoop>	
+					</tower>
+				</missileTower>
+				
+				<PlasmaTower type="Object">
+					<blockSize type="Number">2</blockSize>
+					<cost type="Number">1000</cost>
+					<info type="String"><![CDATA[PLASMA CANNON (9) - A powerful, but expensive, medium range turret capable of hitting air and ground units.]]></info>
+					<tower type="Object">
+						<upgradePaths type="String"><![CDATA[PlasmaTowerII]]></upgradePaths>
+						<itemName type="String">plasma cannon I</itemName>
+						<targeting type="String">all</targeting>
+						<skinName type="String">PlasmaTower</skinName>
+						<range type="Number">180</range>
+						<reloadTime type="Number">500</reloadTime>
+						<projectileRefName type="String">plasma</projectileRefName>
+						<aimAtTarget type="Boolean">1</aimAtTarget>
+						<shotSound type="String">PlasmaShot</shotSound>
+						<useShotSoundLoop type="Boolean">0</useShotSoundLoop>	
+					</tower>
+				</PlasmaTower>
+				
+				<artilleryTower type="Object">
+					<blockSize type="Number">2</blockSize>
+					<cost type="Number">1000</cost>
+					<info type="String"><![CDATA[ARTILLERY (8) - A slow firing but devastating long range cannon. Damage is more intense closer to the center of the blast.]]></info>
+					<tower type="Object">
+						<upgradePaths type="String"><![CDATA[artilleryTowerII]]></upgradePaths>
+						<itemName type="String">heavy cannon I</itemName>
+						<targeting type="String">ground</targeting>
+						<skinName type="String">ArtilleryTower</skinName>
+						<range type="Number">300</range>
+						<reloadTime type="Number">6000</reloadTime>
+						<projectileRefName type="String">shell</projectileRefName>
+						<shotSound type="String">ArtilleryShot</shotSound>
+						<useShotSoundLoop type="Boolean">0</useShotSoundLoop>	
+					</tower>	
+				</artilleryTower>
+				
+				<laserTower type="Object">
+					<blockSize type="Number">2</blockSize>
+					<cost type="Number">1000</cost>
+					<info type="String"><![CDATA[LASER CANNON (7) - A long range turret that will damage all units along the path of its beam. This turret can also be modified to target air units.]]></info>
+					<tower type="Object">
+						<upgradePaths type="String"><![CDATA[gLaserTowerII,aLaserTowerI]]></upgradePaths>
+						<itemName type="String">laser cannon I</itemName>
+						<targeting type="String">ground</targeting>
+						<skinName type="String">LaserTower</skinName>
+						<range type="Number">400</range>
+						<reloadTime type="Number">4000</reloadTime>
+						<projectileRefName type="String">laser</projectileRefName>
+						<turretLength type="Number">20</turretLength>
+						<shotSound type="String">LaserShot</shotSound>
+						<useShotSoundLoop type="Boolean">0</useShotSoundLoop>	
+					</tower>	
+				</laserTower>
+				
+				<fireTower type="Object">
+					<blockSize type="Number">2</blockSize>
+					<cost type="Number">600</cost>
+					<info type="String"><![CDATA[FLAME THROWER (5) - A short range unit that fires a constant stream damaging all ground units in its path.]]></info>
+					<tower type="Object">
+						<upgradePaths type="String"><![CDATA[fireTowerII]]></upgradePaths>
+						<itemName type="String">flame thrower I</itemName>
+						<targeting type="String">ground</targeting>
+						<skinName type="String">FireTower</skinName>
+						<range type="Number">120</range>
+						<reloadTime type="Number">150</reloadTime>
+						<projectileRefName type="String">fire</projectileRefName>
+						<aimAtTarget type="Boolean">0</aimAtTarget>
+						<angleRandomness type="Number">.125</angleRandomness>
+						<shotSound type="String">Flame</shotSound>
+						<useShotSoundLoop type="Boolean">1</useShotSoundLoop>
+					</tower>
+				</fireTower>
+				
+				<shockTower type="Object">
+					<blockSize type="Number">2</blockSize>
+					<cost type="Number">1000</cost>
+					<info type="String"><![CDATA[PULSE EMITTER (6) - A slow firing but devastitating short range turret that damages all units within its radius. Damage is equal throughout the effected radius.]]></info>
+					<tower type="Object">
+						<upgradePaths type="String"><![CDATA[shockTowerII]]></upgradePaths>
+						<itemName type="String">pulse emitter I</itemName>
+						<targeting type="String">all</targeting>
+						<skinName type="String">ShockTower</skinName>
+						<range type="Number">55</range>
+						<reloadTime type="Number">6000</reloadTime>
+						<shotsAtOnce type="Number">1</shotsAtOnce>
+						<projectileRefName type="String">shockWave</projectileRefName>
+						<aimAtTarget type="Boolean">0</aimAtTarget>
+						<angleSpread type="Number">0</angleSpread>
+						<angleRandomness type="Number">0</angleRandomness>
+						<turretLength type="Number">0</turretLength>
+						<maxTurretRotation type="Number">6.9</maxTurretRotation>
+						<rotationAccel type="Number">6.9</rotationAccel>
+						<manualTargetingEnabled type="Boolean">0</manualTargetingEnabled>
+						<shotSound type="String">ShockShot</shotSound>
+						<useShotSoundLoop type="Boolean">0</useShotSoundLoop>	
+					</tower>	
+				</shockTower>
+				
+				<flakTower type="Object">
+					<blockSize type="Number">2</blockSize>
+					<cost type="Number">400</cost>
+					<info type="String"><![CDATA[FLAK CANNON (4) - A quick firing anti-air tower that shoots 5 simultaneous shots and has some area of effect damage.]]></info>
+					<tower type="Object">
+						<upgradePaths type="String"><![CDATA[flakTowerII]]></upgradePaths>
+						<itemName type="String">flak cannon I</itemName>
+						<targeting type="String">air</targeting>
+						<skinName type="String">FlakTower</skinName>
+						<range type="Number">180</range>
+						<reloadTime type="Number">1000</reloadTime>
+						<shotsAtOnce type="Number">4</shotsAtOnce>
+						<projectileRefName type="String">flak</projectileRefName>
+						<aimAtTarget type="Boolean">0</aimAtTarget>
+						<angleSpread type="Number">.1</angleSpread>
+						<angleRandomness type="Number">0</angleRandomness>
+						<turretLength type="Number">17</turretLength>
+						<shotSound type="String">FlakShot</shotSound>
+						<useShotSoundLoop type="Boolean">0</useShotSoundLoop>	
+					</tower>	
+					
+				</flakTower>
+				
+				<block type="Object">
+					<blockSize type="Number">1</blockSize>
+					<cost type="Number">50</cost>
+					<info type="String"><![CDATA[WALL BLOCK (Q) - use these to limit the movement of the enemy forces.]]></info>
+					<upgradePaths type="String"><![CDATA[blockII]]></upgradePaths>
+					<itemName type="String">wall block</itemName>
+					<block type="String">PlaceableWall</block>
+				</block>
+		
+				
+			</itemRefs>
+			
+		</itemMenu>
+			
+	</gameUI>
+
+	<projectileCollector type="Object">
+		
+		<creepExplodeRefName type="String"><![CDATA[creep_explosion_smoke|creep_explosion_flare]]></creepExplodeRefName>
+		
+		<projectileRefs type="Object">
+			
+			<bullet type="Object">
+				<weaponType type="String">projectile</weaponType>
+				<directDamage type="Number">24</directDamage>
+				<indirectDamage type="Number">0</indirectDamage>
+				<velocity type="Number">12</velocity>
+
+				<skinName type="String"><![CDATA[TestProjectile]]></skinName>
+				
+				<explosionRadius type="Number">0</explosionRadius>
+				<explosionRefName type="String"><![CDATA[projectile_explosion_bullet]]></explosionRefName>
+			
+				<trailConfig type="Object">
+					<width type="Number">4</width>
+					<height type="Number">4</height>
+					<offset type="Number">0</offset>
+					<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				</trailConfig>
+
+				<trailScaleRate type="Number">1</trailScaleRate>
+				
+				<activeDamageCheck type="Boolean">0</activeDamageCheck>
+				<trackingShot type="Boolean">1</trackingShot>
+				<matchAngle type="Boolean">1</matchAngle>
+				<reaquireTarget type="Boolean">0</reaquireTarget>
+				<useFallOff type="Boolean">0</useFallOff>
+				<criticalChance type="Number">0</criticalChance>
+				
+			</bullet>
+			
+			<shell type="Object">
+				<weaponType type="String">projectile</weaponType>
+				<directDamage type="Number">0</directDamage>
+				<indirectDamage type="Number">1200</indirectDamage>
+				<velocity type="Number">8</velocity>
+				<skinName type="String"><![CDATA[TestProjectile]]></skinName>
+				<explosionRadius type="Number">80</explosionRadius>
+				<explosionRefName type="String"><![CDATA[projectile_explosion_shell_shrapnel|projectile_explosion_shell_smoke]]></explosionRefName>
+		
+				<trailConfig type="Object">
+					<width type="Number">10</width>
+					<height type="Number">10</height>
+					<offset type="Number">5</offset>
+					<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				</trailConfig>
+				<trailScaleRate type="Number">1</trailScaleRate>
+				
+				<activeDamageCheck type="Boolean">0</activeDamageCheck>
+				<trackingShot type="Boolean">0</trackingShot>
+				<matchAngle type="Boolean">0</matchAngle>
+				<reaquireTarget type="Boolean">0</reaquireTarget>
+				<useFallOff type="Boolean">1</useFallOff>
+				<criticalChance type="Number">0</criticalChance>
+			</shell>
+			
+			<cannon type="Object">
+				<weaponType type="String">projectile</weaponType>
+				<directDamage type="Number">0</directDamage>
+				<indirectDamage type="Number">180</indirectDamage>
+				<velocity type="Number">10</velocity>
+				<skinName type="String"><![CDATA[TestProjectile]]></skinName>
+				<explosionRadius type="Number">50</explosionRadius>
+				<explosionRefName type="String"><![CDATA[projectile_explosion_cannon_shrapnel|projectile_explosion_cannon_smoke]]></explosionRefName>
+				
+				<trailConfig type="Object">
+					<width type="Number">7</width>
+					<height type="Number">7</height>
+					<offset type="Number">4</offset>
+					<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				</trailConfig>
+				<trailScaleRate type="Number">1</trailScaleRate>
+				
+				<activeDamageCheck type="Boolean">0</activeDamageCheck>
+				<trackingShot type="Boolean">1</trackingShot>
+				<matchAngle type="Boolean">0</matchAngle>
+				<reaquireTarget type="Boolean">0</reaquireTarget>
+				<useFallOff type="Boolean">1</useFallOff>
+				<criticalChance type="Number">0</criticalChance>
+			</cannon>
+			
+			<flak type="Object">
+				<weaponType type="String">projectile</weaponType>
+				<directDamage type="Number">0</directDamage>
+				<indirectDamage type="Number">75</indirectDamage>
+				<velocity type="Number">10</velocity>
+				<skinName type="String"><![CDATA[]]></skinName>
+				<explosionRadius type="Number">40</explosionRadius>
+				<explosionRefName type="String"><![CDATA[projectile_explosion_flak_shrapnel|projectile_explosion_flak_smoke]]></explosionRefName>
+				
+				<trailConfig type="Object">
+					<width type="Number">5</width>
+					<height type="Number">5</height>
+					<offset type="Number">0</offset>
+					<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				</trailConfig>
+				<trailScaleRate type="Number">1.01</trailScaleRate>
+				
+				<explodeOnFirstImpact ype="Boolean">1</explodeOnFirstImpact>
+				<activeDamageCheck type="Boolean">0</activeDamageCheck>
+				<trackingShot type="Boolean">1</trackingShot>
+				<matchAngle type="Boolean">0</matchAngle>
+				<reaquireTarget type="Boolean">0</reaquireTarget>
+				<useFallOff type="Boolean">1</useFallOff>
+				<criticalChance type="Number">0</criticalChance>
+			</flak>
+			
+			<missile type="Object">
+				<weaponType type="String">projectile</weaponType>
+				<indirectDamage type="Number">270</indirectDamage>
+				<velocity type="Number">6</velocity>
+				<skinName type="String"><![CDATA[TestProjectile2]]></skinName>
+				<explosionRadius type="Number">40</explosionRadius>
+				<explosionRefName type="String"><![CDATA[projectile_explosion_missile]]></explosionRefName>
+				<bounceRangeLimit type="Number">150</bounceRangeLimit>
+				
+				<maxRotation type="Number">.157</maxRotation>
+				
+				<trailConfig type="Object">
+					<width type="Number">7</width>
+					<height type="Number">7</height>
+					<offset type="Number">8</offset>
+					<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				</trailConfig>
+				<trailScaleRate type="Number">1</trailScaleRate>
+
+				<activeDamageCheck type="Boolean">0</activeDamageCheck>
+				<trackingShot type="Boolean">1</trackingShot>
+				<matchAngle type="Boolean">1</matchAngle>
+				<reaquireTarget type="Boolean">1</reaquireTarget>
+				<useFallOff type="Boolean">0</useFallOff>
+				<criticalChance type="Number">0</criticalChance>
+				
+			</missile>
+			
+			<fire type="Object">
+				<weaponType type="String">projectile</weaponType>
+				<directDamage type="Number">0</directDamage>
+				<indirectDamage type="Number">4</indirectDamage>
+				<velocity type="Number">3</velocity>
+				<skinName type="String"><![CDATA[]]></skinName>
+				<explosionRadius type="Number">25</explosionRadius>
+				<explosionRefName type="String"><![CDATA[]]></explosionRefName>
+				
+				<trailConfig type="Object">
+					<width type="Number">7</width>
+					<height type="Number">7</height>
+					<offset type="Number">0</offset>
+					<bmdName type="String"><![CDATA[particle: flare]]></bmdName>
+				</trailConfig>
+
+				<trailScaleRate type="Number">1.04</trailScaleRate>
+				
+				<explodeOnFirstImpact type="Boolean">0</explodeOnFirstImpact>
+				<activeDamageCheck type="Boolean">1</activeDamageCheck>
+				<trackingShot type="Boolean">0</trackingShot>
+				<matchAngle type="Boolean">0</matchAngle>
+				<reaquireTarget type="Boolean">0</reaquireTarget>
+				<useFallOff type="Boolean">1</useFallOff>
+				<criticalChance type="Number">0</criticalChance>
+			</fire>
+			
+			<shockWave type="Object">
+				<weaponType type="String">bomb</weaponType>
+				<indirectDamage type="Number">750</indirectDamage>
+				<explosionRadius type="Number">85</explosionRadius>
+				<explosionRefName type="String"><![CDATA[]]></explosionRefName>
+				<explodeSkin type="String">AreaEffect</explodeSkin>
+				<useFallOff type="Boolean">0</useFallOff>
+				<criticalChance type="Number">0</criticalChance>
+			</shockWave>
+			
+			<standardBomb type="Object">
+				<weaponType type="String">bomb</weaponType>
+				<indirectDamage type="Number">10000</indirectDamage>
+				<explosionRadius type="Number">65</explosionRadius>
+				<explosionRefName type="String"><![CDATA[bomb_explosion_smoke|bomb_explosion_flare]]></explosionRefName>
+				<criticalChance type="Number">0</criticalChance>
+			</standardBomb>
+			
+			<EMP type="Object">
+				<weaponType type="String">bomb</weaponType>
+				<indirectDamage type="Number">0</indirectDamage>
+				<explosionRadius type="Number">100</explosionRadius>
+				<slow type="Object">
+					<ratio type="Number">.5</ratio>
+					<duration type="Number">10000</duration>		
+				</slow>
+				<explosionRefName type="String"><![CDATA[emp_explosion|emp_explosion_2]]></explosionRefName>
+				<explodeSkin type="String">EMP</explodeSkin>
+				<criticalChance type="Number">0</criticalChance>
+			</EMP>
+			
+			<nukeBomb type="Object">
+				<weaponType type="String">bomb</weaponType>
+				<indirectDamage type="Number">100000</indirectDamage>
+				<explosionRadius type="Number">200</explosionRadius>
+				<explosionRefName type="String"><![CDATA[nuke_explosion_smoke|nuke_explosion_flare]]></explosionRefName>
+				<criticalChance type="Number">0</criticalChance>
+			</nukeBomb>	
+			
+			<laser type="Object">
+				<weaponType type="String">beam</weaponType>
+				<directDamage type="Number">500</directDamage>
+				<indirectDamage type="Number">0</indirectDamage>
+				<beamLength type="Number">400</beamLength>
+				<velocity type="Number">Infinity</velocity>
+				<skinName type="String"><![CDATA[LaserSkin]]></skinName>
+				<criticalChance type="Number">0</criticalChance>
+			</laser>
+			
+			<plasma type="Object">
+				<weaponType type="String">projectile</weaponType>
+				<directDamage type="Number">120</directDamage>
+				<velocity type="Number">12</velocity>
+				<skinName type="String"><![CDATA[PlasmaProjectile]]></skinName>
+				<explosionRadius type="Number">0</explosionRadius>
+				<explosionRefName type="String"><![CDATA[projectile_explosion_plasma_flare]]></explosionRefName>
+				
+				<trailConfig type="Object">
+					<width type="Number">8</width>
+					<height type="Number">8</height>
+					<offset type="Number">0</offset>
+					<bmdName type="String"><![CDATA[particle: greenGlow]]></bmdName>
+				</trailConfig>
+				<trailScaleRate type="Number">1</trailScaleRate>
+				
+				<activeDamageCheck type="Boolean">0</activeDamageCheck>
+				<trackingShot type="Boolean">1</trackingShot>
+				<matchAngle type="Boolean">0</matchAngle>
+				<reaquireTarget type="Boolean">0</reaquireTarget>
+				<criticalChance type="Number">0</criticalChance>
+			
+			</plasma>
+			
+		</projectileRefs>
+		
+		<particleParamsRefs type="Object">
+				
+			<creep_explosion_flare type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">0</spawnXVariance>
+					<spawnYVariance type="Number">0</spawnYVariance>
+					<velocityMin type="Number">.2</velocityMin>
+					<velocityMax type="Number">.25</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">350</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">10</alphaFadeMin>
+					<alphaFadeMax type="Number">12</alphaFadeMax>
+			</creep_explosion_flare>
+				
+			<creep_explosion_smoke type="Object">
+					<delay type="Number">100</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">4</spawnXVariance>
+					<spawnYVariance type="Number">4</spawnYVariance>
+					<velocityMin type="Number">.45</velocityMin>
+					<velocityMax type="Number">.5</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">200</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">3</alphaFadeMin>
+					<alphaFadeMax type="Number">4</alphaFadeMax>
+			</creep_explosion_smoke>
+			
+			<projectile_explosion_plasma_flare type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">4</spawnXVariance>
+					<spawnYVariance type="Number">4</spawnYVariance>
+					<velocityMin type="Number">.4</velocityMin>
+					<velocityMax type="Number">.55</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">200</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">10</alphaFadeMin>
+					<alphaFadeMax type="Number">12</alphaFadeMax>
+			</projectile_explosion_plasma_flare>
+			
+			<projectile_explosion_plasma_flare_explode type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">4</spawnXVariance>
+					<spawnYVariance type="Number">4</spawnYVariance>
+					<velocityMin type="Number">1.3</velocityMin>
+					<velocityMax type="Number">1.4</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">200</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">10</alphaFadeMin>
+					<alphaFadeMax type="Number">12</alphaFadeMax>
+			</projectile_explosion_plasma_flare_explode>
+			
+			<projectile_explosion_plasma_flare_shrapnel type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">2</spawnXVariance>
+					<spawnYVariance type="Number">2</spawnYVariance>
+					<velocityMin type="Number">4</velocityMin>
+					<velocityMax type="Number">5</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">200</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">20</alphaFadeMin>
+					<alphaFadeMax type="Number">22</alphaFadeMax>
+			</projectile_explosion_plasma_flare_shrapnel>
+			
+			<projectile_explosion_bullet type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">0</spawnXVariance>
+					<spawnYVariance type="Number">0</spawnYVariance>
+					<velocityMin type="Number">.4</velocityMin>
+					<velocityMax type="Number">.45</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">100</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">10</alphaFadeMin>
+					<alphaFadeMax type="Number">12</alphaFadeMax>
+			</projectile_explosion_bullet>
+				
+			<projectile_explosion_missile type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">0</spawnXVariance>
+					<spawnYVariance type="Number">0</spawnYVariance>
+					<velocityMin type="Number">1</velocityMin>
+					<velocityMax type="Number">1.2</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">175</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">10</alphaFadeMin>
+					<alphaFadeMax type="Number">12</alphaFadeMax>
+			</projectile_explosion_missile>
+			
+			<projectile_explosion_shell_smoke type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">6</spawnXVariance>
+					<spawnYVariance type="Number">6</spawnYVariance>
+					<velocityMin type="Number">.85</velocityMin>
+					<velocityMax type="Number">1.05</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">300</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">3</alphaFadeMin>
+					<alphaFadeMax type="Number">4</alphaFadeMax>
+			</projectile_explosion_shell_smoke>
+				
+			<projectile_explosion_shell_shrapnel type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">2</spawnXVariance>
+					<spawnYVariance type="Number">2</spawnYVariance>
+					<velocityMin type="Number">3</velocityMin>
+					<velocityMax type="Number">4</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">50</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">20</alphaFadeMin>
+					<alphaFadeMax type="Number">22</alphaFadeMax>
+			</projectile_explosion_shell_shrapnel>
+			
+			<projectile_explosion_heavy_shell_smoke type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">3</spawnXVariance>
+					<spawnYVariance type="Number">3</spawnYVariance>
+					<velocityMin type="Number">.85</velocityMin>
+					<velocityMax type="Number">1.05</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">400</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">3</alphaFadeMin>
+					<alphaFadeMax type="Number">4</alphaFadeMax>
+			</projectile_explosion_heavy_shell_smoke>
+				
+			<projectile_explosion_heavy_shell_shrapnel type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">2</spawnXVariance>
+					<spawnYVariance type="Number">2</spawnYVariance>
+					<velocityMin type="Number">4</velocityMin>
+					<velocityMax type="Number">5</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">120</life>
+					<lifeVariance type="Number">100</lifeVariance>
+					<alphaFadeMin type="Number">20</alphaFadeMin>
+					<alphaFadeMax type="Number">22</alphaFadeMax>
+			</projectile_explosion_heavy_shell_shrapnel>
+				
+			<projectile_explosion_cannon_smoke type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">0</spawnXVariance>
+					<spawnYVariance type="Number">0</spawnYVariance>
+					<velocityMin type="Number">.45</velocityMin>
+					<velocityMax type="Number">.5</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">300</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">3</alphaFadeMin>
+					<alphaFadeMax type="Number">4</alphaFadeMax>
+			</projectile_explosion_cannon_smoke>
+				
+			<projectile_explosion_cannon_shrapnel type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">0</spawnXVariance>
+					<spawnYVariance type="Number">0</spawnYVariance>
+					<velocityMin type="Number">2</velocityMin>
+					<velocityMax type="Number">2.5</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">50</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">20</alphaFadeMin>
+					<alphaFadeMax type="Number">22</alphaFadeMax>
+			</projectile_explosion_cannon_shrapnel>
+			
+			<projectile_explosion_flak_smoke type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">1</spawnXVariance>
+					<spawnYVariance type="Number">1</spawnYVariance>
+					<velocityMin type="Number">.1</velocityMin>
+					<velocityMax type="Number">.15</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">50</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">7.5</alphaFadeMin>
+					<alphaFadeMax type="Number">8.5</alphaFadeMax>
+			</projectile_explosion_flak_smoke>
+				
+			<projectile_explosion_flak_shrapnel type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">0</spawnXVariance>
+					<spawnYVariance type="Number">0</spawnYVariance>
+					<velocityMin type="Number">2</velocityMin>
+					<velocityMax type="Number">2.5</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">25</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">20</alphaFadeMin>
+					<alphaFadeMax type="Number">22</alphaFadeMax>
+			</projectile_explosion_flak_shrapnel>
+			
+			<bomb_explosion_flare type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">0</spawnXVariance>
+					<spawnYVariance type="Number">0</spawnYVariance>
+					<velocityMin type="Number">1.4</velocityMin>
+					<velocityMax type="Number">1.95</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">300</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">10</alphaFadeMin>
+					<alphaFadeMax type="Number">12</alphaFadeMax>
+			</bomb_explosion_flare>
+			
+			<bomb_explosion_smoke type="Object">
+					<delay type="Number">150</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">15</spawnXVariance>
+					<spawnYVariance type="Number">15</spawnYVariance>
+					<velocityMin type="Number">1.2</velocityMin>
+					<velocityMax type="Number">1.25</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">300</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">3</alphaFadeMin>
+					<alphaFadeMax type="Number">4</alphaFadeMax>
+			</bomb_explosion_smoke>
+			
+			<projectile_explosion_plasma type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">2</spawnXVariance>
+					<spawnYVariance type="Number">2</spawnYVariance>
+					<velocityMin type="Number">.5</velocityMin>
+					<velocityMax type="Number">.6</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">100</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">10</alphaFadeMin>
+					<alphaFadeMax type="Number">12</alphaFadeMax>
+			</projectile_explosion_plasma>
+			
+			<emp_explosion type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">0</spawnXVariance>
+					<spawnYVariance type="Number">0</spawnYVariance>
+					<velocityMin type="Number">2.4</velocityMin>
+					<velocityMax type="Number">6.95</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">300</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">10</alphaFadeMin>
+					<alphaFadeMax type="Number">12</alphaFadeMax>
+			</emp_explosion>
+			
+			<emp_explosion_2 type="Object">
+					<delay type="Number">200</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">0</spawnXVariance>
+					<spawnYVariance type="Number">0</spawnYVariance>
+					<velocityMin type="Number">3.4</velocityMin>
+					<velocityMax type="Number">6.95</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">300</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">10</alphaFadeMin>
+					<alphaFadeMax type="Number">12</alphaFadeMax>
+			</emp_explosion_2>
+			
+			<nuke_explosion_flare type="Object">
+					<delay type="Number">0</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">40</spawnXVariance>
+					<spawnYVariance type="Number">40</spawnYVariance>
+					<velocityMin type="Number">3</velocityMin>
+					<velocityMax type="Number">3.5</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">450</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">10</alphaFadeMin>
+					<alphaFadeMax type="Number">12</alphaFadeMax>
+			</nuke_explosion_flare>
+			
+			<nuke_explosion_smoke type="Object">
+					<delay type="Number">200</delay>
+					<gravity type="Number">0</gravity>
+					<spawnXVariance type="Number">0</spawnXVariance>
+					<spawnYVariance type="Number">0</spawnYVariance>
+					<velocityMin type="Number">2.5</velocityMin>
+					<velocityMax type="Number">2.5</velocityMax>
+					<angle type="Number">0</angle>
+					<angleVariance type="Number">3.14</angleVariance>
+					<life type="Number">450</life>
+					<lifeVariance type="Number">0</lifeVariance>
+					<alphaFadeMin type="Number">3</alphaFadeMin>
+					<alphaFadeMax type="Number">4</alphaFadeMax>
+			</nuke_explosion_smoke>
+				
+		</particleParamsRefs>
+		
+		<particleEmitterRefs type="Object">
+			
+			<creep_explosion_flare type="Object">
+				<width type="Number">22</width>
+				<height type="Number">22</height>
+				<bmdName type="String"><![CDATA[particle: flare]]></bmdName>
+				<particleRefName type="String"><![CDATA[creep_explosion_flare]]></particleRefName>
+				<minSpawn type="Number">4</minSpawn>
+				<maxSpawn type="Number">5</maxSpawn>
+				<sound type="String">ExplosionSound_1</sound>
+			</creep_explosion_flare>
+			
+			<creep_explosion_smoke type="Object">
+				<width type="Number">26</width>
+				<height type="Number">26</height>
+				<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				<particleRefName type="String"><![CDATA[creep_explosion_smoke]]></particleRefName>
+				<minSpawn type="Number">8</minSpawn>
+				<maxSpawn type="Number">10</maxSpawn>
+			</creep_explosion_smoke>
+			
+			<projectile_explosion_plasma_flare type="Object">
+				<width type="Number">18</width>
+				<height type="Number">18</height>
+				<bmdName type="String"><![CDATA[particle: greenGlow]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_plasma_flare]]></particleRefName>
+				<minSpawn type="Number">1</minSpawn>
+				<maxSpawn type="Number">1</maxSpawn>
+			</projectile_explosion_plasma_flare>
+			
+			<projectile_explosion_plasma_flare_explode type="Object">
+				<width type="Number">30</width>
+				<height type="Number">30</height>
+				<bmdName type="String"><![CDATA[particle: greenGlow]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_plasma_flare_explode]]></particleRefName>
+				<minSpawn type="Number">2</minSpawn>
+				<maxSpawn type="Number">3</maxSpawn>
+			</projectile_explosion_plasma_flare_explode>
+			
+			<projectile_explosion_plasma_flare_shrapnel type="Object">
+				<width type="Number">7</width>
+				<height type="Number">7</height>
+				<bmdName type="String"><![CDATA[particle: greenGlow]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_plasma_flare_shrapnel]]></particleRefName>
+				<minSpawn type="Number">3</minSpawn>
+				<maxSpawn type="Number">6</maxSpawn>
+			</projectile_explosion_plasma_flare_shrapnel>
+			
+			<projectile_explosion_bullet type="Object">
+				<width type="Number">6</width>
+				<height type="Number">6</height>
+				<bmdName type="String"><![CDATA[particle: flare]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_bullet]]></particleRefName>
+				<minSpawn type="Number">1</minSpawn>
+				<maxSpawn type="Number">1</maxSpawn>
+			</projectile_explosion_bullet>
+			
+			<projectile_explosion_missile type="Object">
+				<width type="Number">18</width>
+				<height type="Number">18</height>
+				<bmdName type="String"><![CDATA[particle: flare]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_missile]]></particleRefName>
+				<minSpawn type="Number">1</minSpawn>
+				<maxSpawn type="Number">2</maxSpawn>
+			</projectile_explosion_missile>
+			
+			<projectile_explosion_shell_smoke type="Object">
+				<width type="Number">33</width>
+				<height type="Number">33</height>
+				<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_shell_smoke]]></particleRefName>
+				<minSpawn type="Number">7</minSpawn>
+				<maxSpawn type="Number">8</maxSpawn>
+			</projectile_explosion_shell_smoke>
+			
+			<projectile_explosion_shell_shrapnel type="Object">
+				<width type="Number">10</width>
+				<height type="Number">10</height>
+				<bmdName type="String"><![CDATA[particle: shrapnel]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_shell_shrapnel]]></particleRefName>
+				<minSpawn type="Number">6</minSpawn>
+				<maxSpawn type="Number">9</maxSpawn>
+				<sound type="String">ExplosionSound_1</sound>
+			</projectile_explosion_shell_shrapnel>
+			
+			<projectile_explosion_heavy_shell_smoke type="Object">
+				<width type="Number">45</width>
+				<height type="Number">45</height>
+				<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_heavy_shell_smoke]]></particleRefName>
+				<minSpawn type="Number">8</minSpawn>
+				<maxSpawn type="Number">12</maxSpawn>
+			</projectile_explosion_heavy_shell_smoke>
+			
+			<projectile_explosion_heavy_shell_shrapnel type="Object">
+				<width type="Number">10</width>
+				<height type="Number">10</height>
+				<bmdName type="String"><![CDATA[particle: shrapnel]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_heavy_shell_shrapnel]]></particleRefName>
+				<minSpawn type="Number">8</minSpawn>
+				<maxSpawn type="Number">10</maxSpawn>
+				<sound type="String">ExplosionSound_1</sound>
+			</projectile_explosion_heavy_shell_shrapnel>
+			
+			<projectile_explosion_cannon_smoke type="Object">
+				<width type="Number">30</width>
+				<height type="Number">30</height>
+				<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_cannon_smoke]]></particleRefName>
+				<minSpawn type="Number">1</minSpawn>
+				<maxSpawn type="Number">2</maxSpawn>
+			</projectile_explosion_cannon_smoke>
+			
+			<projectile_explosion_cannon_shrapnel type="Object">
+				<width type="Number">5</width>
+				<height type="Number">5</height>
+				<bmdName type="String"><![CDATA[particle: shrapnel]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_cannon_shrapnel]]></particleRefName>
+				<minSpawn type="Number">2</minSpawn>
+				<maxSpawn type="Number">2</maxSpawn>
+				<sound type="String">ExplosionSound_3</sound>
+			</projectile_explosion_cannon_shrapnel>
+			
+			<projectile_explosion_flak_smoke type="Object">
+				<width type="Number">22</width>
+				<height type="Number">22</height>
+				<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_flak_smoke]]></particleRefName>
+				<minSpawn type="Number">1</minSpawn>
+				<maxSpawn type="Number">1</maxSpawn>
+			</projectile_explosion_flak_smoke>
+			
+			<projectile_explosion_flak_shrapnel type="Object">
+				<width type="Number">5</width>
+				<height type="Number">5</height>
+				<bmdName type="String"><![CDATA[particle: shrapnel]]></bmdName>
+				<particleRefName type="String"><![CDATA[projectile_explosion_flak_shrapnel]]></particleRefName>
+				<minSpawn type="Number">1</minSpawn>
+				<maxSpawn type="Number">1</maxSpawn>
+			</projectile_explosion_flak_shrapnel>
+			
+			<bomb_explosion_flare type="Object">
+				<width type="Number">60</width>
+				<height type="Number">60</height>
+				<bmdName type="String"><![CDATA[particle: flare]]></bmdName>
+				<particleRefName type="String"><![CDATA[bomb_explosion_flare]]></particleRefName>
+				<minSpawn type="Number">14</minSpawn>
+				<maxSpawn type="Number">14</maxSpawn>
+				<sound type="String">ExplosionSound_1</sound>
+			</bomb_explosion_flare>
+			
+			<bomb_explosion_smoke type="Object">
+				<width type="Number">50</width>
+				<height type="Number">50</height>
+				<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				<particleRefName type="String"><![CDATA[bomb_explosion_smoke]]></particleRefName>
+				<minSpawn type="Number">15</minSpawn>
+				<maxSpawn type="Number">15</maxSpawn>
+			</bomb_explosion_smoke>
+
+			<emp_explosion type="Object">
+				<width type="Number">15</width>
+				<height type="Number">15</height>
+				<bmdName type="String"><![CDATA[particle: glow]]></bmdName>
+				<particleRefName type="String"><![CDATA[emp_explosion]]></particleRefName>
+				<minSpawn type="Number">12</minSpawn>
+				<maxSpawn type="Number">12</maxSpawn>
+				<sound type="String">ShockShot</sound>
+			</emp_explosion>
+			
+			<emp_explosion_2 type="Object">
+				<width type="Number">15</width>
+				<height type="Number">15</height>
+				<bmdName type="String"><![CDATA[particle: glow]]></bmdName>
+				<particleRefName type="String"><![CDATA[emp_explosion_2]]></particleRefName>
+				<minSpawn type="Number">8</minSpawn>
+				<maxSpawn type="Number">8</maxSpawn>
+			</emp_explosion_2>
+			
+			<nuke_explosion_flare type="Object">
+				<width type="Number">170</width>
+				<height type="Number">170</height>
+				<bmdName type="String"><![CDATA[particle: flare]]></bmdName>
+				<particleRefName type="String"><![CDATA[nuke_explosion_flare]]></particleRefName>
+				<minSpawn type="Number">10</minSpawn>
+				<maxSpawn type="Number">11</maxSpawn>
+				<sound type="String">ExplosionSound_2</sound>
+			</nuke_explosion_flare>
+			
+			<nuke_explosion_smoke type="Object">
+				<width type="Number">210</width>
+				<height type="Number">210</height>
+				<bmdName type="String"><![CDATA[particle: smoke puff]]></bmdName>
+				<particleRefName type="String"><![CDATA[nuke_explosion_smoke]]></particleRefName>
+				<minSpawn type="Number">5</minSpawn>
+				<maxSpawn type="Number">5</maxSpawn>
+			</nuke_explosion_smoke>
+			
+		</particleEmitterRefs>
+
+	</projectileCollector>
+	
+	<gameMain type="Object">
+		<defaultTileName type="String"><![CDATA[G]]></defaultTileName>
+		<gridWidth type="Number">51</gridWidth>
+		<gridHeight type="Number">31</gridHeight>
+		<tileSize type="Number">17</tileSize>
+		
+		<creepTypeRefs type="Object">
+			
+			<!-- standard enemies -->
+			<speeder type="Object">
+				<type type="String"><![CDATA[ground]]></type>
+				<spawnRatio type="Number">1</spawnRatio>
+				<creepSpeed type="Number">2</creepSpeed>
+				<hpMultiplier type="Number">.5</hpMultiplier>
+				<skinName type="String">creep_LandSpeeder</skinName>
+			</speeder>
+			
+			<mediumTank type="Object">
+				<type type="String"><![CDATA[ground]]></type>
+				<spawnRatio type="Number">1</spawnRatio>
+				<creepSpeed type="Number">1.5</creepSpeed>
+				<hpMultiplier type="Number">1</hpMultiplier>
+				<skinName type="String">creep_MediumTank</skinName>
+			</mediumTank>
+			
+			<heavyTank type="Object">
+				<type type="String"><![CDATA[ground]]></type>
+				<spawnRatio type="Number">1</spawnRatio>
+				<creepSpeed type="Number">1</creepSpeed>
+				<hpMultiplier type="Number">1.5</hpMultiplier>
+				<skinName type="String">creep_HeavyTank</skinName>
+			</heavyTank>
+		
+			<lightAir type="Object">
+				<type type="String"><![CDATA[air]]></type>
+				<spawnRatio type="Number">1</spawnRatio>
+				<creepSpeed type="Number">2.5</creepSpeed>
+				<hpMultiplier type="Number">.25</hpMultiplier>
+				<skinName type="String">creep_AirFighter</skinName>
+			</lightAir>
+			
+			<heavyAir type="Object">
+				<type type="String"><![CDATA[air]]></type>
+				<spawnRatio type="Number">.5</spawnRatio>
+				<creepSpeed type="Number">1.75</creepSpeed>
+				<hpMultiplier type="Number">.5</hpMultiplier>
+				<skinName type="String">creep_AirBomber</skinName>
+			</heavyAir>
+			
+			<!-- bosses -->
+			<speederBoss type="Object">
+				<type type="String"><![CDATA[ground]]></type>
+				<spawnRatio type="Number">0</spawnRatio>
+				<creepSpeed type="Number">2</creepSpeed>
+				<hpMultiplier type="Number">2.5</hpMultiplier>
+				<skinName type="String">creep_LightGroundBoss</skinName>
+				<timeOverride type="Number">15000</timeOverride>
+				<bonusMultiplier type="Number">10</bonusMultiplier>
+				<damageMultiplier type="Number">5</damageMultiplier>
+			</speederBoss>
+			
+			<mediumTankBoss type="Object">
+				<type type="String"><![CDATA[ground]]></type>
+				<spawnRatio type="Number">0</spawnRatio>
+				<creepSpeed type="Number">1.5</creepSpeed>
+				<hpMultiplier type="Number">5</hpMultiplier>
+				<skinName type="String">creep_MediumGroundBoss</skinName>
+				<timeOverride type="Number">15000</timeOverride>
+				<bonusMultiplier type="Number">10</bonusMultiplier>
+				<damageMultiplier type="Number">5</damageMultiplier>
+			</mediumTankBoss>
+			
+			<heavyTankBoss type="Object">
+				<type type="String"><![CDATA[ground]]></type>
+				<spawnRatio type="Number">0</spawnRatio>
+				<creepSpeed type="Number">1</creepSpeed>
+				<hpMultiplier type="Number">7.5</hpMultiplier>
+				<skinName type="String">creep_HeavyGroundBoss</skinName>
+				<timeOverride type="Number">15000</timeOverride>
+				<bonusMultiplier type="Number">10</bonusMultiplier>
+				<damageMultiplier type="Number">5</damageMultiplier>
+			</heavyTankBoss>
+		
+			<lightAirBoss type="Object">
+				<type type="String"><![CDATA[air]]></type>
+				<spawnRatio type="Number">0</spawnRatio>
+				<creepSpeed type="Number">2.5</creepSpeed>
+				<hpMultiplier type="Number">1.25</hpMultiplier>
+				<skinName type="String">creep_LightAirBoss</skinName>
+				<timeOverride type="Number">15000</timeOverride>
+				<bonusMultiplier type="Number">10</bonusMultiplier>
+				<damageMultiplier type="Number">5</damageMultiplier>
+			</lightAirBoss>
+			
+			<heavyAirBoss type="Object">
+				<type type="String"><![CDATA[air]]></type>
+				<spawnRatio type="Number">0</spawnRatio>
+				<creepSpeed type="Number">1.75</creepSpeed>
+				<hpMultiplier type="Number">2.5</hpMultiplier>
+				<skinName type="String">creep_HeavyAirBoss</skinName>
+				<timeOverride type="Number">15000</timeOverride>
+				<bonusMultiplier type="Number">10</bonusMultiplier>
+				<damageMultiplier type="Number">5</damageMultiplier>
+			</heavyAirBoss>
+			
+		</creepTypeRefs>
+
+		<themes type="Object">
+			
+			<greenField type="Object">
+				
+				<terrain type="String">grass</terrain>
+				
+				<groundGridConfig type="Object">
+					<shadow type="Object">
+						<distance type="Number">4</distance>
+						<blurX type="Number">12</blurX>
+						<blurY type="Number">12</blurY>
+						<strength type="Number">1.6</strength>
+						<angle type="Number">20</angle>
+						<quality type="Number">3</quality>
+						<alpha type="Number">.35</alpha>	
+					</shadow>
+					
+					<fgColMartix type="Array">
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1</e>
+						<e type="Number">0</e>
+					</fgColMartix>
+					
+				</groundGridConfig>
+				
+				<airGridConfig type="Object">
+					<shadow type="Object">
+						<distance type="Number">4</distance>
+						<blurX type="Number">12</blurX>
+						<blurY type="Number">12</blurY>
+						<strength type="Number">1.6</strength>
+						<angle type="Number">20</angle>
+						<quality type="Number">3</quality>
+						<alpha type="Number">.5</alpha>	
+					</shadow>
+					
+					<fgColMartix type="Array">
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1</e>
+						<e type="Number">0</e>
+					</fgColMartix>
+					
+				</airGridConfig>
+			</greenField>
+			
+			<redPlanet type="Object">
+				
+				<terrain type="String">sand</terrain>
+				
+				<groundGridConfig type="Object">
+					<shadow type="Object">
+						<distance type="Number">4</distance>
+						<blurX type="Number">12</blurX>
+						<blurY type="Number">12</blurY>
+						<strength type="Number">1.6</strength>
+						<angle type="Number">20</angle>
+						<quality type="Number">3</quality>
+						<alpha type="Number">.25</alpha>	
+					</shadow>
+					
+					<fgColorTransform type="Object">
+						<r type="String">1</r>
+						<g type="String">1</g>
+						<b type="String">1</b>
+						<a type="String">1</a>
+						<rM type="String">50</rM>
+						<gM type="String">0</gM>
+						<bM type="String">0</bM>
+						<aM type="String">0</aM>
+					</fgColorTransform>
+					
+					<bgColorTransform type="Object">
+						<r type="String">1</r>
+						<g type="String">.65</g>
+						<b type="String">.65</b>
+						<a type="String">1</a>
+						<rM type="String">10</rM>
+						<gM type="String">0</gM>
+						<bM type="String">0</bM>
+						<aM type="String">0</aM>
+					</bgColorTransform>
+					
+					<fgColMartix type="Array">
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1</e>
+						<e type="Number">0</e>
+					</fgColMartix>
+					
+				</groundGridConfig>
+				
+				<airGridConfig type="Object">
+					<shadow type="Object">
+						<distance type="Number">4</distance>
+						<blurX type="Number">12</blurX>
+						<blurY type="Number">12</blurY>
+						<strength type="Number">1.6</strength>
+						<angle type="Number">20</angle>
+						<quality type="Number">3</quality>
+						<alpha type="Number">.5</alpha>	
+					</shadow>
+					
+					<fgColorTransform type="Object">
+						<r type="String">1</r>
+						<g type="String">1</g>
+						<b type="String">1</b>
+						<a type="String">1</a>
+						<rM type="String">50</rM>
+						<gM type="String">0</gM>
+						<bM type="String">0</bM>
+						<aM type="String">0</aM>
+					</fgColorTransform>
+					
+					<fgColMartix type="Array">
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1</e>
+						<e type="Number">0</e>
+					</fgColMartix>
+				</airGridConfig>
+			</redPlanet>
+			
+			<desert type="Object">
+				
+				<terrain type="String">sand</terrain>
+				
+				<groundGridConfig type="Object">
+					<shadow type="Object">
+						<distance type="Number">4</distance>
+						<blurX type="Number">12</blurX>
+						<blurY type="Number">12</blurY>
+						<strength type="Number">1.6</strength>
+						<angle type="Number">20</angle>
+						<quality type="Number">3</quality>
+						<alpha type="Number">.35</alpha>	
+					</shadow>
+					
+					<fgColorTransform type="Object">
+						<r type="String">1</r>
+						<g type="String">1</g>
+						<b type="String">1</b>
+						<a type="String">1</a>
+						<rM type="String">80</rM>
+						<gM type="String">40</gM>
+						<bM type="String">0</bM>
+						<aM type="String">0</aM>
+					</fgColorTransform>
+					
+					
+					<bgColorTransform type="Object">
+						<r type="String">1</r>
+						<g type="String">1</g>
+						<b type="String">1</b>
+						<a type="String">1</a>
+						<rM type="String">60</rM>
+						<gM type="String">40</gM>
+						<bM type="String">0</bM>
+						<aM type="String">0</aM>
+					</bgColorTransform>
+					
+					<fgColMartix type="Array">
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1</e>
+						<e type="Number">0</e>
+					</fgColMartix>
+
+				</groundGridConfig>
+				
+				<airGridConfig type="Object">
+					<shadow type="Object">
+						<distance type="Number">4</distance>
+						<blurX type="Number">12</blurX>
+						<blurY type="Number">12</blurY>
+						<strength type="Number">1.6</strength>
+						<angle type="Number">20</angle>
+						<quality type="Number">3</quality>
+						<alpha type="Number">.5</alpha>	
+					</shadow>
+					
+					<fgColorTransform type="Object">
+						<r type="String">1</r>
+						<g type="String">1</g>
+						<b type="String">1</b>
+						<a type="String">1</a>
+						<rM type="String">80</rM>
+						<gM type="String">40</gM>
+						<bM type="String">0</bM>
+						<aM type="String">0</aM>
+					</fgColorTransform>
+					
+					<fgColMartix type="Array">
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1.55999994277954</e>
+						<e type="Number">0</e>
+						<e type="Number">-35.5599975585938</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">0</e>
+						<e type="Number">1</e>
+						<e type="Number">0</e>
+					</fgColMartix>
+					
+				</airGridConfig>	
+			</desert>
+		</themes>
+		
+	</gameMain>
+</config>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
