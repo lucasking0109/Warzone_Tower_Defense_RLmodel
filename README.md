@@ -1,8 +1,20 @@
 # WarZone Tower Defense — Reinforcement Learning Agent
 
-Training a Reinforcement Learning agent to play WarZone Tower Defense Extended autonomously. The goal is to survive as many waves as possible on the Level 4 "Enclave" map.
+Training a Reinforcement Learning agent to play [WarZone Tower Defense Extended](https://en.grandgames.net/games/wz_tower_defense_ex) autonomously. The goal is to survive as many waves as possible on the Level 4 "Enclave" map.
 
 ![Map](enclave_map.png)
+
+## Motivation
+
+I've been playing WarZone Tower Defense Extended since I was a kid. It's one of those games I kept coming back to over the years, always trying to push further and survive more waves. I wanted to see if a reinforcement learning agent could learn strategies that go beyond what I could do manually — and ultimately surpass my own best score of 151 waves.
+
+## Game Simulator
+
+Since the original game is a Flash-based browser game, there is no API or programmatic interface available. To make RL training possible, I built a complete game simulator from scratch in Python + Pygame.
+
+The game data (tower stats, enemy stats, wave compositions, map layout) was extracted by decompiling the original SWF file using [JPEXS Free Flash Decompiler (FFDec)](https://github.com/niclaslindstedt/ffdec). The decompiled ActionScript source provided all the numerical parameters needed to faithfully recreate the game mechanics.
+
+The simulator focuses on **Level 4 "Enclave"** in **Quick Cash** mode with **ground-only enemies** — the most challenging standard configuration and the one I spent the most time playing.
 
 ## Project Overview
 
