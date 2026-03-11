@@ -6,7 +6,7 @@ Training a Reinforcement Learning agent to play [WarZone Tower Defense Extended]
 
 ## Motivation
 
-I've been playing WarZone Tower Defense Extended since I was a kid. It's one of those games I kept coming back to over the years, always trying to push further and survive more waves. I wanted to see if a reinforcement learning agent could learn strategies that go beyond what I could do manually — and ultimately surpass my own best score of 151 waves.
+I've been playing WarZone Tower Defense Extended since I was a kid. It's one of those games I kept coming back to over the years, always trying to push further and survive more waves. My personal best is **200 waves** on Level 4 "Enclave" in Quick Cash mode (ground only). I wanted to see if a reinforcement learning agent could learn strategies that go beyond what I could do manually — and ultimately surpass that record.
 
 ## Game Simulator
 
@@ -145,13 +145,13 @@ Trained across **20 runs**, totaling **267.6 hours** (11.2 days) and **209 milli
 ### Wave Progress
 
 ```
-Run  1: ████████████████████ 101 waves (baseline)
-Run  2: ███████████████████████ 117 waves
-Run  3: ███████████████████████████ 137 waves
-Run 16: █████████████████████████████ 145.7 waves
-Run 20: ██████████████████████████████ 155.4 waves
-Run 17: ████████████████████████████████ 165.6 waves ← best
-Human:  ██████████████████████████████ 151 waves
+Run  1: ██████████ 101 waves (baseline)
+Run  2: ███████████ 117 waves
+Run  3: █████████████ 137 waves
+Run 16: ██████████████ 145.7 waves
+Run 20: ███████████████ 155.4 waves
+Run 17: ████████████████ 165.6 waves ← agent best
+Human:  ████████████████████ 200 waves
 ```
 
 ### Key Findings
@@ -247,6 +247,34 @@ python3 rl/replay.py --model runs/my_run/best_wave_model --seed 42
 - **Game time per step**: 40 ticks (2 seconds)
 - **Max steps per episode**: 2,500
 - **Pathfinding**: BFS (15× faster than A*, supports dynamic wall rerouting)
+
+## Current Status & Reflections
+
+After **267.6 hours** (11.2 days) of training across 20 runs and **209 million steps**, the best agent reached **165.6 waves** — still short of my personal record of 200 waves.
+
+Looking at how [AlphaGo](https://www.nature.com/articles/nature16961) was trained, the key insight is that they first trained the model on a massive dataset of expert games before applying reinforcement learning. The imitation learning approach (Run 17) confirmed this — just 3 human demonstrations produced a bigger improvement than 200+ hours of pure RL reward tuning.
+
+However, 3 demos are far from enough. To truly push past 200 waves, the agent likely needs dozens or even hundreds of high-quality expert demonstrations covering late-game scenarios (waves 150+), where resource management and tower upgrade decisions become critical. Due to time constraints, I haven't been able to record that many gameplay sessions, so the project is paused here for now.
+
+### Ideas for Future Improvement
+
+Contributions and experiments are welcome! Some directions that may help push past the current ceiling:
+
+**Reward & Environment:**
+- Add a reward for maintaining a minimum tower upgrade level (e.g., all towers should be level 3+ by wave 100)
+- Implement a "macro action" system — let the agent plan sequences of actions (build + upgrade) instead of one action per step
+- Use curriculum learning: start training on easier waves and gradually increase difficulty
+- Separate the build and upgrade decisions into a hierarchical policy
+
+**Training Approach:**
+- Record more human demonstrations, especially for waves 100–200, and use a larger BC dataset
+- Try offline RL methods (e.g., Decision Transformer, CQL) that can better leverage demonstration data
+- Experiment with self-play or population-based training to discover diverse strategies
+- Use a CNN or attention-based architecture instead of MLP to better capture spatial tower/enemy relationships
+
+**Simulator:**
+- Add support for air units and other map configurations
+- Implement a fast headless mode for higher training throughput
 
 ## License
 
